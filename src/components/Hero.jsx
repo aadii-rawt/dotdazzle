@@ -28,7 +28,7 @@ const Hero = () => {
             {/*--------------------------review---------------------- */}
             <motion.div initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: 'easeOut' }} className='flex items-center  gap-3 md:gap-5 mt-8 md:mt-10'>
+              transition={{ duration: 0.8, ease: 'easeOut' }} className='flex items-center justify-center md:justify-start gap-3 md:gap-5 mt-8 md:mt-10'>
               <div className='flex'>
                 <div className='w-12 h-12 md:w-16 md:h-16  border-4 border-white bg-center bg-cover rounded-full' style={{ backgroundImage: `url(/review1.avif)` }}></div>
                 <div className='w-12 h-12 md:w-16 md:h-16 bg-blue-500 border-4 border-white rounded-full bg-center bg-cover -ml-6' style={{ backgroundImage: `url(/review3.avif)` }}></div>
