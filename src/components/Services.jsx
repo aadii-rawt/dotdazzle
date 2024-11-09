@@ -38,23 +38,8 @@ const services = [
 
 const Services = () => {
     return (
-        // <div className='max-w-[1300px] mx-auto my-14'>
-        //     <h1 className='font-arik text-5xl up'>Services we offer</h1>
-        //     <div className='mt-5 grid grid-cols-4 gap-5'>
-        //         {services.map((item) => (<motion.div
-        //             initial={{ opacity: 0, y: 50 }}
-        //             whileInView={{ opacity: 1, y: 0 }}
-        //             transition={{ duration: 0.8, ease: 'easeOut' }} className='w-[250px] shadow-md p-2 px-4 text-center  rounded-2xl overflow-hidden'>
-        //             <div className='cursor-pointer'>
-        //                 <img src={item.img} alt="" className='w-full rounded-lg' />
-        //             </div>
-        //             <h1 className='text-2xl font-semibold font-arik my-2'>Website</h1>
-        //         </motion.div>))}
-        //     </div>
-        // </div>
         <div className='max-w-[1280px] mx-auto'>
-
-            <h1 className='text-4xl font-russo text-center mb-10'>Our Services</h1>
+            <h1 className='text-4xl font-russo text-center mb-20'>Our Services</h1>
             <motion.div initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: 'easeOut' }} className='bg-purple-300 h-[400px] rounded-3xl mx-2 md:p-0 relative'>
