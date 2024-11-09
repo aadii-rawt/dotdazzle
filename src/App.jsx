@@ -9,7 +9,7 @@ import WhyUs from './components/WhyUs'
 const App = () => {
 
   return (
-    <div className='relative mb-20'>
+    <div className='relative mb-20 bg-gradient-to-b from-purple-100 via-purple-50'>
       {/* <div className='bg-gradient-to-b from-purple-100 via-purple-50'> */}
       <Header />
       <div className='space-y-20'>

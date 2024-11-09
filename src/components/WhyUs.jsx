@@ -47,11 +47,9 @@ function WhyUs() {
                 <img src="/t2.png" alt="Centered Image" className='w-[450px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2' />
             </div>
 
-
-
-            <div className='flex pt-32 pb-32'>
-                <div>
-                    <img src="./think2.avif" alt="Centered Image" className='' />
+            <div className='flex flex-col md:flex-row pt-32 pb-32'>
+                <div className='flex items-center justify-center'>
+                    <img src="./t2.png" alt="Centered Image" />
                 </div>
                 <div className='grid grid-cols-1 md:grid-cols-2'>
                     <div className='shadow-lg rounded-2xl p-5 py-10 flex flex-col md:flex-row item-center gap-5 mx-2  place-self-center justify-self-center'>
@@ -95,6 +93,8 @@ function WhyUs() {
                     </div>
                 </div>
             </div>
+
+
             <div className='grid grid-cols-1 md:grid-cols-2 gap-5 justify-center items-center mx-auto relative'>
                 <div className='shadow-lg rounded-2xl p-5 py-10 flex flex-col md:flex-row item-center gap-5 mx-2 md:w-3/4 place-self-center justify-self-center'>
                     <div>
@@ -140,9 +140,9 @@ function WhyUs() {
 
 
 
-            <div className='flex pb-32 pt-32'>
-                <div>
-                    <img src="./t.png" alt="Centered Image" className='' />
+            <div className='flex flex-col md:flex-row pt-32 pb-32'>
+                <div className='flex items-center justify-center'>
+                    <img src="./t.png" alt="Centered Image" />
                 </div>
                 <div className='grid grid-cols-1 md:grid-cols-2'>
                     <div className='shadow-lg rounded-2xl p-5 py-10 flex flex-col md:flex-row item-center gap-5 mx-2  place-self-center justify-self-center'>
@@ -231,9 +231,9 @@ function WhyUs() {
 
 
 
-            <div className='flex pt-32'>
-                <div>
-                    <img src="./t3.png" alt="Centered Image" className='' />
+            <div className='flex flex-col md:flex-row pt-32 pb-32'>
+                <div className='flex items-center justify-center'>
+                    <img src="./t3.png" alt="Centered Image" />
                 </div>
                 <div className='grid grid-cols-1 md:grid-cols-2'>
                     <div className='shadow-lg rounded-2xl p-5 py-10 flex flex-col md:flex-row item-center gap-5 mx-2  place-self-center justify-self-center'>
