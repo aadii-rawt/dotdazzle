@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Russo+One&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.circular-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem; /* Tailwind's 'text-sm' */
+  font-weight: 600; /* Tailwind's 'font-semibold' */
+  color: #d946ef; /* Tailwind's purple-500 */
+  text-transform: uppercase;
+  white-space: nowrap;
+  animation: rotate 10s linear infinite;
+}
+
+.circular-text span {
+  display: inline-block;
+  transform-origin: 0 50%;
+  animation: spin 20s linear infinite;
+}
+
+.circular-text span::before {
+  content: attr(data-text);
+  display: block;
+  white-space: pre;
+}
+.move{
+  animation: rotate 10s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
