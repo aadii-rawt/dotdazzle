@@ -21,7 +21,7 @@ const Header = () => {
 
     return (
         <header
-            className={`w-full fixed top-0 left-0 z-50 p-5  transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg' : ' bg-transparent '
+            className={`w-full fixed top-0 left-0 z-50 p-5 py-3  transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg' : ' bg-transparent '
                 }`}>
             <div className='max-w-[1280px] mx-auto flex items-center justify-between'>
                 <div className='hidden md:block'>
