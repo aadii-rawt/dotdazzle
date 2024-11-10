@@ -8,7 +8,7 @@ import { GoArrowUpRight } from 'react-icons/go'
 const Hero = () => {
   return (
     <section className="bg-gradient-to-b from-purple-100 via-purple-50  pt-24">
-      <div className=' elative max-w-[1280px] mx-auto w-full h-fit  md:min-h-screen  flex flex-col space-y-10 md:flex-row items-center justify-between'>
+      <div className=' relative max-w-[1280px] mx-auto w-full h-fit  md:min-h-screen  flex flex-col space-y-10 md:flex-row items-center justify-between'>
         <div className='relative bg-transparent  md:-mt-40 md:w-1/2'>
           <div className=''>
             <motion.h1
@@ -22,7 +22,7 @@ const Hero = () => {
             <div className='flex items-center justify-center md:block'>
               <motion.button initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, ease: 'easeOut' }} className='bg-gradient-to-r from-purple-900 via-purple-700 to-purple-500   font-russo  text-white md:text-2xl p-2 px-5 flex items-center gap-4 mt-5  md:mt-8 rounded-3xl'> <span>Let's talk</span> <GoArrowUpRight strokeWidth={1} className='text-2xl' />
+                transition={{ duration: 0.8, ease: 'easeOut' }} className='bg-gradient-to-r from-purple-900  via-purple-800 to-purple-700   font-russo  text-white md:text-2xl p-2 px-5 flex items-center gap-4 mt-5  md:mt-8 rounded-3xl'> <span>Let's talk</span> <GoArrowUpRight strokeWidth={1} className='text-2xl' />
               </motion.button>
             </div>
             {/*--------------------------review---------------------- */}

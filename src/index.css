@@ -5,6 +5,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ::-webkit-scrollbar{
+  width: 8px;
+}
+::-webkit-scrollbar-thumb{
+  width: 6px;
+  background: #c84adb80;
+  border-radius: 20px;
+} */
+
 .circular-text {
   position: absolute;
   width: 100%;
