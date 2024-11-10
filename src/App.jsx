@@ -13,8 +13,7 @@ const App = () => {
   return (
     <div className='relative '>
       {/* <div className='bg-gradient-to-b from-purple-100 via-purple-50'> */}
-      {/* <Head
-      er /> */}
+      <Header />
       <div className='space-y-20 bg-gradient-to-b from-purple-100 via-purple-50'>
         <Hero />
 
