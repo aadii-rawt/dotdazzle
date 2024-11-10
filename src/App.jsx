@@ -7,6 +7,8 @@ import Portfolio from './components/Portfolio'
 import WhyUs from './components/WhyUs'
 import Footer from './components/Footer'
 import FAQ from './components/FAQ'
+import WebService from './components/WebService'
+import OurTeam from './components/OurTeam'
 
 const App = () => {
 
@@ -19,6 +21,8 @@ const App = () => {
 
         <Services />
         <WhyUs />
+        <WebService />
+        <OurTeam />
         <FAQ />
         <Footer/>
       </div>
