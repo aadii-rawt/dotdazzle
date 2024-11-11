@@ -1,34 +1,69 @@
-import React, { useState } from 'react'
-import Hero from './components/Hero'
-import Header from './components/Header'
-import Services from './components/Services'
-import Section from './components/Section'
-import Portfolio from './components/Portfolio'
-import WhyUs from './components/WhyUs'
-import Footer from './components/Footer'
-import FAQ from './components/FAQ'
-import WebService from './components/WebService'
-import OurTeam from './components/OurTeam'
+import React, { useState, useEffect, useRef } from 'react';
+import Hero from './components/Hero';
+import Header from './components/Header';
+import Services from './components/Services';
+import Section from './components/Section';
+import Portfolio from './components/Portfolio';
+import WhyUs from './components/WhyUs';
+import Footer from './components/Footer';
+import FAQ from './components/FAQ';
+import OurTeam from './components/OurTeam';
 
 const App = () => {
+
+  const [isCursorVisible, setIsCursorVisible] = useState(false);
+  const cursorRef = useRef(null);
+
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      if (cursorRef.current) {
+        cursorRef.current.style.top = `${e.clientY}px`;
+        cursorRef.current.style.left = `${e.clientX}px`;
+      }
+    };
+
+    // Show cursor on mouse move and add the event listener
+    const handleMouseEnter = () => setIsCursorVisible(true);
+    const handleMouseLeave = () => setIsCursorVisible(false);
+
+    window.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener('mouseenter', handleMouseEnter);
+    window.addEventListener('mouseleave', handleMouseLeave);
+
+    return () => {
+      // Cleanup event listeners on unmount
+      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('mouseenter', handleMouseEnter);
+      window.removeEventListener('mouseleave', handleMouseLeave);
+    };
+  }, []);
 
   return (
     <div className='relative '>
       {/* <div className='bg-gradient-to-b from-purple-100 via-purple-50'> */}
       <Header />
-      <div className='space-y-20 bg-gradient-to-b from-purple-100 via-purple-50'>
+      <div className='space-y-20 '>
         <Hero />
-
-        <Services />
         <WhyUs />
-        <WebService />
+        <Services />
         <OurTeam />
         <FAQ />
-        <Footer/>
+        <Footer />
       </div>
-      {/* </div> */}
-      {/* <div className={`w-8 h-8 rounded-full bg-black z-50 absolute  top-[${point.y}] left-[${point.x}] `}></div> */}
-    </div>
+      <div>
+        <a href="">
+          <img src="./social.png" alt="whatsapp" className='w-16 fixed bottom-5 right-5' />
+        </a>
+      </div>
+
+      {/*==================== custom cursor ===========================*/}
+        <div
+          ref={cursorRef}
+          className="w-8 h-8 rounded-full border border-black fixed pointer-events-none transition-transform duration-75 transform -translate-x-1/2 -translate-y-1/2 z-50"
+          // style={{ top: 0, left: 0 }}
+        ></div>
+      {/* )} */}
+    </div >
   )
 }
 
