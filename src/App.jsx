@@ -2,13 +2,12 @@ import React, { useState, useEffect, useRef } from 'react';
 import Hero from './components/Hero';
 import Header from './components/Header';
 import Services from './components/Services';
-import Section from './components/Section';
-import Portfolio from './components/Portfolio';
 import WhyUs from './components/WhyUs';
 import Footer from './components/Footer';
 import FAQ from './components/FAQ';
 import OurTeam from './components/OurTeam';
 import ServiceEffect from './components/ServiceEffect';
+import Projects from './components/Projects';
 
 const App = () => {
 
@@ -48,6 +47,7 @@ const App = () => {
         <ServiceEffect />
         <WhyUs />
         <Services />
+        <Projects />
         <OurTeam />
         <FAQ />
         <Footer />
