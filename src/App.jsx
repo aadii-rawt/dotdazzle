@@ -8,6 +8,7 @@ import WhyUs from './components/WhyUs';
 import Footer from './components/Footer';
 import FAQ from './components/FAQ';
 import OurTeam from './components/OurTeam';
+import ServiceEffect from './components/ServiceEffect';
 
 const App = () => {
 
@@ -44,6 +45,7 @@ const App = () => {
       <Header />
       <div className='space-y-20 '>
         <Hero />
+        <ServiceEffect />
         <WhyUs />
         <Services />
         <OurTeam />
@@ -59,10 +61,8 @@ const App = () => {
       {/*==================== custom cursor ===========================*/}
         <div
           ref={cursorRef}
-          className="w-8 h-8 rounded-full border border-black fixed pointer-events-none transition-transform duration-75 transform -translate-x-1/2 -translate-y-1/2 z-50"
-          // style={{ top: 0, left: 0 }}
+          className="w-6 h-6 rounded-full border border-black bg-black fixed pointer-events-none transition-transform duration-75 transform -translate-x-1/2 -translate-y-1/2 z-50"
         ></div>
-      {/* )} */}
     </div >
   )
 }
