@@ -95,40 +95,11 @@ const Services = () => {
     return (
         <div className='max-w-[1280px] mx-auto'>
 
-            <h1 className='text-4xl font-russo text-center mb-20 sticky top-24'>Our Services</h1>
+            <h1 className='text-4xl font-russo text-center mb-20 top-24'>Our Services</h1>
 
             {/* ----------------Slides without animation------------------ */}
 
-            <motion.div initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, ease: 'easeOut' }} className='card-container px-4'>
-                <div className="card">
-                    <h2 className='text-6xl z-40 absolute -0 font-bold font-josefin text-white'>#WebDevelopment</h2>
-                    <h2 className='text-3xl z-40 absolute -bottom-3 font-bold font-russo italic text-white'>#001</h2>
-                    <img src="https://media.istockphoto.com/id/1654916078/photo/abstract-rough-colorful-multicolored-art-on-canvas.jpg?s=612x612&w=0&k=20&c=FkDhu7HQlX4q84mJHCxpagHHSi58CFpQWUl2tfrteV0=" alt="" />
-                </div>
-                <div className="card">
-                    <h2 className='text-6xl z-40 absolute -0 font-bold font-josefin text-white'>#SiteRedesign</h2>
-                    <h2 className='text-3xl z-40 absolute -bottom-3 font-bold font-russo italic text-white'>#002</h2>
-                    <img src="https://wallpapers.com/images/featured/art-dajgwkpkb3im2q3u.jpg" className='mt-3' alt="" />
-                </div>
-                <div className="card">
-                    <h2 className='text-6xl z-40 absolute -0 font-bold font-josefin text-white'>#WebDesign</h2>
-                    <h2 className='text-3xl z-40 absolute -bottom-3 font-bold font-russo italic text-white'>#003</h2>
-                    <img src="https://trembelingart.com/wp-content/uploads/2018/07/Warm-and-Cool-F-1.jpg" className='mt-6' alt="" />
-                </div>
-                <div className="card">
-                    <h2 className='text-6xl z-40 absolute -0 font-bold font-josefin text-white'>#LogoDesign</h2>
-                    <h2 className='text-3xl z-40 absolute -bottom-3 font-bold font-russo italic text-white'>#004</h2>
-                    <img src="https://render.fineartamerica.com/images/rendered/medium/print/8/5.5/break/images/artworkimages/medium/3/tree-of-life-in-colorful-trippy-vibrant-abstract-style-large-stellart-studio.jpg" className='mt-9' alt="" />
-                </div>
-                <div className="card">
-                    <h2 className='text-6xl z-40 absolute -0 font-bold font-josefin text-white'>#SEO</h2>
-                    <h2 className='text-3xl z-40 absolute -bottom-3 font-bold font-russo italic text-white'>#005</h2>
-                    <img src="https://i.ytimg.com/vi/yO_yErWrTNU/maxresdefault.jpg" className='mt-3' alt="" />
-                </div>
-            </motion.div>
-
+           
             <motion.div initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: 'easeOut' }} className=' mt-20 bg-purple-300 h-[400px] rounded-3xl mx-2 md:p-0 relative'>
