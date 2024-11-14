@@ -7,7 +7,10 @@ function Footer() {
             <div className='mx-2'>
                 <h1 className='font-russo text-5xl'>Let's make <br /> something together</h1>
                 <p className='font-josefin my-3 text-xl'>Write us if you have any questions</p>
-                <h2 className='text-2xl md:text-4xl font-bold text-yellow-500 mt-5'>.dazzle</h2>
+                {/* <h2 className='text-2xl md:text-4xl font-bold text-yellow-500 mt-5'>.dazzle</h2> */}
+                <div>
+                    <img src="dazzlelogo.png" className='-ml-1.5' alt="" />
+                </div>
             </div>
             <div className='w-full md:w-1/3 mx-2'>
                 <form action="" className='space-y-4'>

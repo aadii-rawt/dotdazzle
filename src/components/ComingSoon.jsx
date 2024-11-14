@@ -11,7 +11,7 @@ const ComingSoon = () => {
       </div>
       <p className="text-gray-500 uppercase tracking-widest font-josefin">We're still</p>
       <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold  text-blue-700 mb-4">
-       Something Cooking.
+       Something is Cooking.
       </h1>
       <p className="text-gray-500 text-lg mb-8 font-josefin">
         We are going to launch our website very soon. Stay tuned.
