@@ -75,7 +75,7 @@ const Services = () => {
         );
 
         if (lastSlideRef.current) {
-            observer.observe(lastSlideRef.current);
+            observer.observe(lastSlideRef.current) ;
         }
 
         return () => {
