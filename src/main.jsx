@@ -6,7 +6,7 @@ import ComingSoon from './components/ComingSoon.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* <App /> */}
-    <ComingSoon />
+    <App />
+    {/* <ComingSoon /> */}
   </StrictMode>,
 )
