@@ -23,7 +23,7 @@ const ComingSoon = () => {
       </button>
 
       <div className="flex space-x-4 mt-8 text-gray-400">
-        <span className="text-2xl shadow-md rounded-full w-10 h-10 flex items-center justify-center hover:text-black duration-700"><IoLogoInstagram /></span>
+        <a target='_blank' href='https://www.instagram.com/dotdazzle.in/' className="text-2xl shadow-md rounded-full w-10 h-10 flex items-center justify-center hover:text-black duration-700"><IoLogoInstagram /></a>
         <span className="text-2xl shadow-md rounded-full w-10 h-10 flex items-center justify-center hover:text-black duration-700"><FaLinkedinIn /></span>
         <span className="text-2xl shadow-md rounded-full w-10 h-10 flex items-center justify-center hover:text-black duration-700"><FaXTwitter size={20} /></span>
       </div>
