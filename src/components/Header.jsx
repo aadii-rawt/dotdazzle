@@ -32,9 +32,9 @@ const Header = () => {
                         <li><a href='#'>Project</a></li>
                     </ul>
                 </div>
-                <div>
+                {/* <div>
                     <h1 className='text-2xl md:text-4xl font-bold text-yellow-500'>.dazzle</h1>
-                </div>
+                </div> */}
                 <div className='flex items-center gap-3'>
                     <button className='flex gap-4 rounded-3xl bg-black text-white p-2 md:p-3  px-3 md:px-5 font-medium'>
                         Contact us
