@@ -9,7 +9,7 @@ function Projects() {
             <h1 className='text-4xl font-russo text-center mb-20 '>Our Projects</h1>
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5'>
                 {projects.map((data) => (
-                    <motion.div initial={{ opacity: 0, y: 50 }}
+                    <motion.div key={data} initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, ease: 'easeOut' }}
                         className='rounded-2xl overflow-hidden shadow-md  hover:scale-110'>

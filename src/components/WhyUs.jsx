@@ -14,15 +14,16 @@ const data = [
         content: "We provide websites to all startups at very affordable prices."
     },
     {
-        title: "Personal Connection",
-        img: "./phone.avif",
-        content: "We provide websites to all startups at very affordable prices."
-    },
-    {
         title: "Industry Standard",
         img: "./industry.jpg",
         content: "We provide websites to all startups at very affordable prices."
     },
+    {
+        title: "100% Trust",
+        img: "./trust.avif",
+        content: "We provide websites to all startups at very affordable prices."
+    },
+   
 ]
 function WhyUs() {
     return (
