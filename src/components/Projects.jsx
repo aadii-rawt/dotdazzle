@@ -5,8 +5,8 @@ const projects = ["./project4.png", "./project6.jpg", "./project5.png", "./proje
 function Projects() {
 
     return (
-        <section className='max-w-[1280px] mx-auto'>
-            <h1 className='text-4xl font-russo text-center mb-20 '>Our Projects</h1>
+        <section className='max-w-[1280px] mx-auto section'>
+            <h1 className='text-4xl font-russo text-center mb-20'>Our Projects</h1>
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5'>
                 {projects.map((data) => (
                     <motion.div key={data} initial={{ opacity: 0, y: 50 }}
