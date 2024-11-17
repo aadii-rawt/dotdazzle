@@ -40,9 +40,8 @@ const App = () => {
 
   return (
     <div className='relative '>
-      {/* <div className='bg-gradient-to-b from-purple-100 via-purple-50'> */}
       <Header />
-      <div className='space-y-20 '>
+      <div className='space-y-10'>
         <Hero />
         <ServiceEffect />
         <WhyUs />
@@ -59,10 +58,10 @@ const App = () => {
       </div>
 
       {/*==================== custom cursor ===========================*/}
-        <div
-          ref={cursorRef}
-          className="w-6 h-6 rounded-full border-2  border-black  absolute pointer-events-none transition-transform duration-75 transform -translate-x-1/2 -translate-y-1/2 z-50"
-        ></div>
+      <div
+        ref={cursorRef}
+        className="w-6 h-6 rounded-full border-2  border-black  absolute pointer-events-none transition-transform duration-75 transform -translate-x-1/2 -translate-y-1/2 z-50"
+      ></div>
     </div >
   )
 }

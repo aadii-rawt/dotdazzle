@@ -5,19 +5,22 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ::-webkit-scrollbar{
+::-webkit-scrollbar{
   width: 8px;
 }
 ::-webkit-scrollbar-thumb{
   width: 6px;
   background: #c84adb80;
   border-radius: 20px;
-} */
+}
 
 html {
   scroll-behavior: smooth;
 }
 
+.section{
+  padding: 100px 0px 20px 0px;
+}
 .circular-text {
   position: absolute;
   width: 100%;
