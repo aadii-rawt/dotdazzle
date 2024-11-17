@@ -20,10 +20,18 @@ const Hero = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: 'easeOut' }} className='text-center md:text-left md:text-2xl my-4 font-josefin'>Let's Start & Grow Your Startup <br /> To The Next Level.</motion.p>
             <div className='flex items-center justify-center md:block'>
-              <motion.button initial={{ opacity: 0, y: 50 }}
+              {/* <motion.button initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: 'easeOut' }} className='bg-gradient-to-r from-purple-900  via-purple-800 to-purple-700   font-russo  text-white md:text-2xl p-2 px-5 flex items-center gap-4 mt-5  md:mt-8 rounded-3xl'> <span>Let's talk</span> <GoArrowUpRight strokeWidth={1} className='text-2xl' />
-              </motion.button>
+              </motion.button> */}
+              <motion.div initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: 'easeOut' }}  className='inline-block'>
+
+              <a target='_blank' href="https://wa.me/9599518124" className='bg-gradient-to-r from-purple-900  via-purple-800 to-purple-700  font-russo  text-white md:text-2xl p-2 px-5 flex items-center gap-4 mt-5  md:mt-8 rounded-3xl'>
+              <span>Let's talk</span> <GoArrowUpRight strokeWidth={1} className='text-2xl' />
+              </a>
+              </motion.div>
             </div>
             {/*--------------------------review---------------------- */}
             <motion.div initial={{ opacity: 0, y: 50 }}

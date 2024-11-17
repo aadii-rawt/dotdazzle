@@ -2,20 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { BsGridFill } from 'react-icons/bs';
 
 const Header = () => {
-    // State to track if the page is scrolled
     const [isScrolled, setIsScrolled] = useState(false);
-
-    // Function to handle scroll event
     const handleScroll = () => {
-        // Check if the page is scrolled more than 10 pixels
-        setIsScrolled(window.scrollY > 200);
+        setIsScrolled(window.scrollY > 50);
     };
 
     useEffect(() => {
-        // Add scroll event listener on mount
         window.addEventListener('scroll', handleScroll);
-
-        // Cleanup event listener on unmount
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
@@ -25,11 +18,11 @@ const Header = () => {
                 }`}>
 
             <div className='max-w-[1280px] mx-auto flex items-center justify-between'>
-                <div className='hidden md:flex items-center'>
+                <div className='flex items-center'>
                     <div className='-mt-6 mr-4'>
-                        <img src="/dazzlelogo.png" className='w-32' />
+                        <img src="/dazzlelogo.png" alt='dotdazzle logo' title='logo of dotdazzle' className='w-24 md:w-32' />
                     </div>
-                    <ul className='flex  gap-4 rounded-3xl bg-black text-white p-3 px-5 font-medium'>
+                    <ul className='hidden md:flex gap-4 rounded-3xl bg-black text-white p-3 px-5 font-medium'>
                         <li><a href='#'>Home</a></li>
                         <li><a href='#'>About us</a></li>
                         <li><a href='#'>Blog</a></li>
@@ -40,9 +33,11 @@ const Header = () => {
                     <h1 className='text-2xl md:text-4xl font-bold text-yellow-500'>.dazzle</h1>
                 </div> */}
                 <div className='flex items-center gap-3'>
-                    <button className='flex gap-4 rounded-3xl bg-black text-white p-2 md:p-3  px-3 md:px-5 font-medium'>
-                        Contact us
-                    </button>
+                    {/* <button className='flex gap-4 rounded-3xl bg-black text-white p-2 md:p-3  px-3 md:px-5 font-medium'>
+                      s
+                    </button> */}
+                    <a href="https://wa.me/9599518124" className='flex gap-4 rounded-3xl bg-black text-white p-2 md:p-3  px-3 md:px-5 font-medium' target='_blank'>
+                    Contact us</a>
                     <div className='md:hidden'>
                         <BsGridFill size={24} />
                     </div>

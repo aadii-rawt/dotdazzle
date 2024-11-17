@@ -37,7 +37,7 @@ function FAQ() {
     <div className='max-w-[1280px] mx-auto '>
       <h1 className='text-4xl font-russo text-center mb-20'>FAQs</h1>
       <div className="relative">
-        <div className="w-full md:w-3/5 mx-auto my-4 shadow-lg p-8 rounded-2xl">
+        <div className="w-full md:w-3/5 mx-auto  shadow-lg p-8 rounded-2xl">
           {accordionData.map((item, index) => (
             <AccordionItem
               key={index}
@@ -71,14 +71,14 @@ const AccordionItem = ({ title, content, isOpen, onClick,index }) => {
     <div className={index != accordionData?.length -1 && "border-b border-gray-300"}>
       <button
         onClick={onClick}
-        className="w-full flex justify-between items-center py-4  text-xl font-semibold text-left  focus:outline-none"
+        className="w-full flex justify-between items-center gap-3 py-4  text-xl font-semibold text-left  focus:outline-none"
       >
-        <span>{title}</span>
+        <h1 className="text-base sm:text-xl">{title}</h1>
         <span className="text-blue-700">
           {isOpen ? 
           
-          <img src="./up-arrow.jpg" alt="down arrow" className="w-8"/>
-           :  <img src="./down-arrow.jpg" alt="down arrow" className="w-8"/>}
+          <img src="./up-arrow.jpg" alt="down arrow" className=" max-w-5  md:min-w-8 md:max-w-8"/>
+           :  <img src="./down-arrow.jpg" alt="down arrow" className=" max-w-5  md:min-w-8 md:max-w-8"/>}
         </span>
       </button>
       <div
