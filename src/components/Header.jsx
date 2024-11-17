@@ -23,8 +23,12 @@ const Header = () => {
         <header
             className={`w-full fixed top-0 left-0 z-50 p-5 py-3  transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg' : ' bg-transparent '
                 }`}>
+
             <div className='max-w-[1280px] mx-auto flex items-center justify-between'>
-                <div className='hidden md:block'>
+                <div className='hidden md:flex items-center'>
+                    <div className='-mt-6 mr-4'>
+                        <img src="/dazzlelogo.png" className='w-32' />
+                    </div>
                     <ul className='flex  gap-4 rounded-3xl bg-black text-white p-3 px-5 font-medium'>
                         <li><a href='#'>Home</a></li>
                         <li><a href='#'>About us</a></li>
@@ -40,7 +44,7 @@ const Header = () => {
                         Contact us
                     </button>
                     <div className='md:hidden'>
-                        <BsGridFill size={24}/>
+                        <BsGridFill size={24} />
                     </div>
                 </div>
             </div>
