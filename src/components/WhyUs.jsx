@@ -27,7 +27,7 @@ const data = [
 ]
 function WhyUs() {
     return (
-        <div className='max-w-[1280px] mx-auto'>
+        <section className='max-w-[1280px] mx-auto section'>
             <h1 className='text-4xl font-russo text-center mb-20'>Why Choose Us</h1>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-5 justify-center items-center mx-auto relative'>
                 {data.map((t) => (
@@ -46,7 +46,7 @@ function WhyUs() {
                 }
                 <img src="/t2.png" alt="Centered Image" className='w-[450px] hidden md:inline-block md:absolute md:top-1/2 md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2' />
             </div>
-        </div>
+        </section>
     )
 }
 
