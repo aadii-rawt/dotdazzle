@@ -34,7 +34,7 @@ function FAQ() {
       setOpenIndex(openIndex === index ? null : index);
   };
   return (
-    <div className='max-w-[1280px] mx-auto '>
+    <div className='max-w-[1280px] mx-auto section'>
       <h1 className='text-4xl font-russo text-center mb-20'>FAQs</h1>
       <div className="relative">
         <div className="w-full md:w-3/5 mx-auto  shadow-lg p-8 rounded-2xl">
