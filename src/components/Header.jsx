@@ -30,7 +30,7 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className='flex items-center gap-3'>
-                    <a href="https://wa.me/9599518124" className='flex gap-4 rounded-3xl bg-black text-white p-2 md:p-3  px-3 md:px-5 font-medium' target='_blank'>
+                    <a href="https://wa.me/+919717336452" className='flex gap-4 rounded-3xl bg-black text-white p-2 md:p-3  px-3 md:px-5 font-medium' target='_blank'>
                     Contact us</a>
                     <div className='md:hidden'>
                         <BsGridFill size={24} />

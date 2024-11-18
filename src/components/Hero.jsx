@@ -24,7 +24,7 @@ const Hero = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: 'easeOut' }}  className='inline-block'>
 
-              <a target='_blank' href="https://wa.me/9599518124" className='bg-gradient-to-r from-purple-900  via-purple-800 to-purple-700  font-russo  text-white md:text-2xl p-2 px-5 flex items-center gap-4 mt-5  md:mt-8 rounded-3xl'>
+              <a target='_blank' href="https://wa.me/+919717336452" className='bg-gradient-to-r from-purple-900  via-purple-800 to-purple-700  font-russo  text-white md:text-2xl p-2 px-5 flex items-center gap-4 mt-5  md:mt-8 rounded-3xl'>
               <span>Let's talk</span> <GoArrowUpRight strokeWidth={1} className='text-2xl' />
               </a>
               </motion.div>
