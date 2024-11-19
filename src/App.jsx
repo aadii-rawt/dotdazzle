@@ -8,6 +8,7 @@ import FAQ from './components/FAQ';
 import OurTeam from './components/OurTeam';
 import ServiceEffect from './components/ServiceEffect';
 import Projects from './components/Projects';
+import SEO from './components/SEO';
 
 const App = () => {
 
@@ -39,7 +40,9 @@ const App = () => {
   }, []);
 
   return (
+    
     <div className='relative '>
+      <SEO />
       <Header />
       <div className='space-y-10'>
         <Hero />
