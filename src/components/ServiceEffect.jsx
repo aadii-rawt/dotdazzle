@@ -58,14 +58,14 @@ function ServiceEffect() {
   return (
     <motion.div initial={{ opacity: 0, y: 50 }}
     whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.8, ease: 'easeOut' }} className='card-container px-4'>
-    <div className="card">
+    transition={{ duration: 0.8, ease: 'easeOut' }} className='card-container max-w-[1280px] mx-auto section mx-4 '>
+    <div className="card bg-center bg-cover rounded-2xl" style={{backgroundImage: "url('https://trembelingart.com/wp-content/uploads/2018/07/Warm-and-Cool-F-1.jpg')"}}>
         <h2 className='text-6xl z-40 absolute -0 font-bold font-josefin text-white'>#WebDevelopment</h2>
         <h2 className='text-3xl z-40 absolute -bottom-3 font-bold font-russo italic text-white'>#001</h2>
         {/* <img src="https://media.istockphoto.com/id/1654916078/photo/abstract-rough-colorful-multicolored-art-on-canvas.jpg?s=612x612&w=0&k=20&c=FkDhu7HQlX4q84mJHCxpagHHSi58CFpQWUl2tfrteV0=" alt="" /> */}
-        <img src="./project1.avif" alt="" />
+        {/* <img src="./project1.avif" alt="" /> */}
     </div>
-    <div className="card">
+    <div className="card ">
         <h2 className='text-6xl z-40 absolute -0 font-bold font-josefin text-white'>#SiteRedesign</h2>
         <h2 className='text-3xl z-40 absolute -bottom-3 font-bold font-russo italic text-white'>#002</h2>
         <img src="https://wallpapers.com/images/featured/art-dajgwkpkb3im2q3u.jpg" className='mt-3' alt="" />

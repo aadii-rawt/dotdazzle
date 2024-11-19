@@ -20,10 +20,14 @@ const Hero = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: 'easeOut' }} className='text-center md:text-left md:text-2xl my-4 font-josefin'>Let's Start & Grow Your Startup <br /> To The Next Level.</motion.p>
             <div className='flex items-center justify-center md:block'>
-              <motion.button initial={{ opacity: 0, y: 50 }}
+              <motion.div initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, ease: 'easeOut' }} className='bg-gradient-to-r from-purple-900  via-purple-800 to-purple-700   font-russo  text-white md:text-2xl p-2 px-5 flex items-center gap-4 mt-5  md:mt-8 rounded-3xl'> <span>Let's talk</span> <GoArrowUpRight strokeWidth={1} className='text-2xl' />
-              </motion.button>
+                transition={{ duration: 0.8, ease: 'easeOut' }}  className='inline-block'>
+
+              <a target='_blank' href="https://wa.me/+919717336452" className='bg-gradient-to-r from-purple-900  via-purple-800 to-purple-700  font-russo  text-white md:text-2xl p-2 px-5 flex items-center gap-4 mt-5  md:mt-8 rounded-3xl'>
+              <span>Let's talk</span> <GoArrowUpRight strokeWidth={1} className='text-2xl' />
+              </a>
+              </motion.div>
             </div>
             {/*--------------------------review---------------------- */}
             <motion.div initial={{ opacity: 0, y: 50 }}
@@ -58,33 +62,6 @@ const Hero = () => {
             <img src="./16.jpg" alt="" className=' w-[150px] md:w-[250px]  rounded-3xl rotate-12' />
           </motion.div>
 
-        </div>
-
-        <div className='hidden md:absolute  z-10 top-[50%] left-[50%]  transform -translate-x-1/2 -translate-y-1/2'>
-          <div className="relative flex items-center justify-center w-32 h-32 ">
-            {/* SVG with Circular Text */}
-
-            <svg className="absolute move w-full h-full  flex items-center justify-center ">
-              <defs>
-                <path
-                  id="circlePath"
-                  d="M 55, 55 m -45, 0 a 45,45 0 1,1 90,0 a 45,45 0 1,1 -90,0"
-                />
-              </defs>
-              <text className="text-sm font-semibold text-purple-500 ">
-                <textPath href="#circlePath" startOffset="6%">
-                  CONNECT IN WHATSAPP • +91 9599518124 •
-                </textPath>
-              </text>
-            </svg>
-
-
-            {/* Static Arrow Icon */}
-            <div className="absolute">
-              {/* <FaArrowUpRight className="text-purple-500 text-2xl" /> */}
-              {/* <span  className="text-purple-500 text-2xl" >✔️</span> */}
-            </div>
-          </div>
         </div>
       </div>
     </section >
