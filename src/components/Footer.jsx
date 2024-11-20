@@ -51,7 +51,7 @@ function Footer() {
                     </div>
                     <div>
                         <h1>
-                            <img src="dazzlelogo.png" alt="dotdazzle logo" className='-ml-1.5' />
+                        <img src="dazzlelogo.png" alt="dotdazzle logo" className='-ml-1.5 mb-8' />
                         </h1>
                     </div>
                 </div>
