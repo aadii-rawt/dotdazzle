@@ -9,6 +9,7 @@ import OurTeam from './components/OurTeam';
 import ServiceEffect from './components/ServiceEffect';
 import Projects from './components/Projects';
 import SEO from './components/SEO';
+import AboutUs from './components/AboutUs';
 
 const App = () => {
 
@@ -50,6 +51,7 @@ const App = () => {
         <WhyUs />
         <Services />
         <Projects />
+        <AboutUs />
         <OurTeam />
         <FAQ />
         <Footer />
