@@ -1,13 +1,12 @@
 import { motion } from 'framer-motion'
 import React from 'react'
 
-const projects = ["./project4.png", "./project6.jpg", "./project5.png", "./project1.jpg", "https://unblast.com/wp-content/uploads/2019/11/Perspective-Apple-iMac-Mockup-1-1600x1224.jpg", "https://unblast.com/wp-content/uploads/2023/08/Perspective-App-Screen-Mockup-1536x1024.jpg"]
+const projects = ["./responsive-website-project1.png", "./responsive-website-project2.jpg", "./responsive-website-project3.jpg", "https://s3.envato.com/files/326861897/PREVIEW_SET_ZIP/PSD-1.jpg", "./responsive-website-project5.jpg", "./responsive-website-project6.png",]
 function Projects() {
-
     return (
-        <section className='max-w-[1280px] mx-auto section'>
+        <section title='project-section' className='max-w-[1280px] mx-auto section'>
             <h1 className='text-4xl font-russo text-center mb-20'>Our Projects</h1>
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 px-3 md:px-0'>
                 {projects.map((data) => (
                     <motion.div key={data} initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -16,7 +15,6 @@ function Projects() {
                         <img src={data} alt="" />
                     </motion.div>
                 ))}
-
             </div>
         </section>
     )

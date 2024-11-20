@@ -37,7 +37,7 @@ function FAQ() {
     <div className='max-w-[1280px] mx-auto section'>
       <h1 className='text-4xl font-russo text-center mb-20'>FAQs</h1>
       <div className="relative">
-        <div className="w-full md:w-3/5 mx-auto  shadow-lg p-8 rounded-2xl">
+        <div className="w-full md:w-3/5 md:mx-auto shadow-lg p-4 md:p-8 rounded-2xl">
           {accordionData.map((item, index) => (
             <AccordionItem
               key={index}
@@ -49,12 +49,11 @@ function FAQ() {
             />
           ))}
         </div>
-          {/* <img src="./faq1.avif" alt="faq icon" className="w-20 hidden md:block absolute top-10 left-20 rotate-6 z-10" /> */}
-          <img src="./faq2.avif" alt="faq icon" className="w-20 hidden md:block absolute bottom-20 left-20 -rotate-[30deg] z-10" />
-          <img src="./faq4.avif" alt="faq icon" className="w-20 hidden md:block absolute top-20 right-24 z-10" />
-          <img src="./faq3.avif" alt="faq icon" className="w-20 hidden md:block absolute bottom-32 right-32 rotate-6 z-10" />
-      </div>
 
+          <img src="./question-mark-icon1.avif" alt="question mark icon" className="w-20 hidden md:block absolute bottom-20 left-20 -rotate-[30deg] z-10" />
+          <img src="./question-mark-icon2.avif" alt="question mark icon" className="w-20 hidden md:block absolute top-20 right-24 z-10" />
+          <img src="./question-mark-icon3.avif" alt="question mark icon" className="w-20 hidden md:block absolute bottom-32 right-32 rotate-6 z-10" />
+      </div>
     </div>
   )
 }
