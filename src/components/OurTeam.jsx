@@ -3,7 +3,7 @@ import React from 'react'
 function OurTeam() {
     return (
         <div className='max-w-[1280px] mx-auto section'>
-            <h1 className='text-4xl font-russo text-center mb-20'>Our Team</h1>
+            <h1 className='text-4xl font-russo text-center mb-20'>Meet the artists</h1>
             <div className='flex flex-wrap items-center justify-evenly'>
                 {
                     [{ img: './sher.jpg', title: 'Sher', desg: 'Founder' },

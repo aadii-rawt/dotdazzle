@@ -34,9 +34,9 @@ const Hero = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: 'easeOut' }} className='flex items-center justify-center md:justify-start gap-3 md:gap-5 mt-8 md:mt-10'>
               <div className='flex'>
-                <div className='w-12 h-12 md:w-16 md:h-16  border-4 border-white bg-center bg-cover rounded-full' style={{ backgroundImage: `url(/review1.avif)` }}></div>
-                <div className='w-12 h-12 md:w-16 md:h-16 bg-blue-500 border-4 border-white rounded-full bg-center bg-cover -ml-6' style={{ backgroundImage: `url(/review3.avif)` }}></div>
-                <div className='w-12 h-12 md:w-16 md:h-16 bg-blue-500 border-4 bg-center bg-cover border-white rounded-full -ml-6' style={{ backgroundImage: `url(/review2.avif)` }}></div>
+                <div className='w-12 h-12 md:w-16 md:h-16  border-4 border-white bg-center bg-cover rounded-full' style={{ backgroundImage: `url(./review-img1.avif)` }}></div>
+                <div className='w-12 h-12 md:w-16 md:h-16 bg-blue-500 border-4 border-white rounded-full bg-center bg-cover -ml-6' style={{ backgroundImage: `url(./review-img2.avif)` }}></div>
+                <div className='w-12 h-12 md:w-16 md:h-16 bg-blue-500 border-4 bg-center bg-cover border-white rounded-full -ml-6' style={{ backgroundImage: `url(./review-img3.avif)` }}></div>
               </div>
               <h1 className='text-xl md:text-2xl font-russo'>25+ reviews</h1>
             </motion.div>
@@ -47,7 +47,7 @@ const Hero = () => {
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: 'easeOut' }} className='flex items-start justify-between'>
-            <img src="./06.jpg" alt="" className='w-[150px] md:w-[250px] rounded-3xl -rotate-12 shadow-2xl ' style={{ boxShadow: "-30px 20px 0px rgba(0,0,0,0.2" }} />
+            <img src="./hero-img1.jpg" alt="" className='w-[150px] md:w-[250px] rounded-3xl -rotate-12 shadow-2xl ' style={{ boxShadow: "-30px 20px 0px rgba(0,0,0,0.2" }} />
             <div className='mr-5'>
               <GiStarShuriken size={80} className='text-purple-800 move' />
             </div>
@@ -59,7 +59,7 @@ const Hero = () => {
             <div>
               <GiNinjaStar size={80} className='text-purple-800 move' />
             </div>
-            <img src="./16.jpg" alt="" className=' w-[150px] md:w-[250px]  rounded-3xl rotate-12' />
+            <img src="./hero-img2.jpg" alt="" className=' w-[150px] md:w-[250px]  rounded-3xl rotate-12' />
           </motion.div>
 
         </div>
