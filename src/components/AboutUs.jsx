@@ -2,7 +2,7 @@ import React from 'react'
 
 function AboutUs() {
     return (
-        <section id="about" className='max-w-[1280px] mx-auto  relative z-50'>
+        <section id="about" className='max-w-[1280px] mx-auto  relative z-5'>
             <h1 className='text-4xl font-russo text-center mb-20'>About Dotdazzle</h1>
             <div id='contact' className='flex flex-col gap-y-10 md:flex-row justify-between items-center gap-10 px-3 md:px-0'>
                 <div className='md:w-[50%]'>
