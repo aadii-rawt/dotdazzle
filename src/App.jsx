@@ -54,9 +54,9 @@ const App = () => {
         <WhyUs />
         {/* <HoverCard/> */}
         <Services />
-        <GetQuoteModal/>
-        <Projects />
         <AboutUs />
+        {/* <GetQuoteModal/> */}
+        <Projects />
         <OurTeam />
         <FAQ />
         <Footer />

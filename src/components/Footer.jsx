@@ -47,7 +47,7 @@ function Footer() {
                             <p className='flex items-center gap-2'> <span><MdOutlinePhone className='text-purple-600' /></span>+91 9599518124, </p>
                             <p className='flex items-center gap-2'>  <span><MdOutlinePhone className='text-purple-600' /></span>+91 9717336452</p>
                         </div>
-                        <p title='mail to dotdazzle' className='flex items-center gap-2'> <MdOutlineEmail className='text-purple-600' /> <a href="mailto:dotdazzle@gmail.com">dotdazzle@gmail.com</a></p>
+                        <p title='mail to dotdazzle' className='flex items-center gap-2'> <MdOutlineEmail className='text-purple-600' /> <a href="mailto:dotdazzle@gmail.com" title='dotdazzle email'>dotdazzle.in@gmail.com</a></p>
                     </div>
                     <div>
                         <h1>
