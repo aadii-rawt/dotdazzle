@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+/Favicon/dazzlelogo.png
 Sitemap: https://dotdazzle.in/sitemap.xml
