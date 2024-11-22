@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet-async";
-import FavIcon from '../../public/Favicon/favicon.png'
 
 const SEO = () => (
     <Helmet>
@@ -14,7 +13,7 @@ const SEO = () => (
     />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://dotdazzle.in" />
-    <link rel="shortcut icon" href={FavIcon} type="image/x-icon" />
+    <link rel="shortcut icon" href='/Favicon/favicon.png' type="image/x-icon" />
 </Helmet>
 
 );
