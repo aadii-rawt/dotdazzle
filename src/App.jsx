@@ -10,10 +10,12 @@ import ServiceEffect from './components/ServiceEffect';
 import Projects from './components/Projects';
 import SEO from './components/SEO';
 import AboutUs from './components/AboutUs';
+import GetQuoteModal from './components/QuoteForm';
 
 const App = () => {
 
   const [isCursorVisible, setIsCursorVisible] = useState(false);
+  const [isQuote, setIsQuote] = useState(false);
   const cursorRef = useRef(null);
 
   useEffect(() => {
@@ -50,6 +52,7 @@ const App = () => {
         <ServiceEffect />
         <WhyUs />
         <Services />
+        <GetQuoteModal/>
         <Projects />
         <AboutUs />
         <OurTeam />
