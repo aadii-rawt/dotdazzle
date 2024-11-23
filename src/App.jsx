@@ -52,7 +52,6 @@ const App = () => {
         <Hero />
         <ServiceEffect />
         <WhyUs />
-        <HoverCard/>
         <Services />
         <AboutUs />
         <GetQuoteModal/>
