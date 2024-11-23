@@ -67,24 +67,23 @@ const Services = () => {
                 <h1 className='text-4xl font-russo text-center mb-20 '>Our Services</h1>
 
                 <div className="relative overflow-hidden flex flex-col items-center md:flex-row justify-center p-6 ">
-                    {/* {cards.map((card, index) => ( */}
+
                     <div
-                        className={`relative w-80 md:w-72 lg:w-96 p-6 text-left rounded-xl shadow-lg transform transition-transform duration-300 ease-in-out hover:-translate-y-2 -mr-16 group bg-[#10242F] group-hover:bg-[#A5C8D8] -rotate-[4deg] translate-y-4 cursor-pointer`}
+                        className={`relative overflow-hidden w-80 md:w-72 lg:w-96 p-6 text-left rounded-xl shadow-lg transform transition-transform duration-300 ease-in-out hover:-translate-y-2 -mr-16 group bg-[#10242F] group-hover:bg-[#A5C8D8] -rotate-[4deg] translate-y-4 cursor-pointer`} >
+                        <div className="absolute h-[0rem] w-[0rem] -z-10 rounded-full bg-[#A5C8D8] duration-500 -top-20  -left-20  group-hover:h-[550px] group-hover:w-[34rem] transition-all ease-in-out"></div>
 
-                    >
-                        <h3 className="text-3xl text-[#A5C8D8] group-hover:text-[#10242F]  font-semibold mb-2">Website</h3>
-                        <p className=" text-[#A5C8D8] group-hover:text-[#10242F]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem earum eius error placeat consequatur corrupti.</p>
-
-                        <div className='bg-[#A5C8D8] group-hover:bg-[#10242F] p-3 rounded-lg mt-4'>
+                        <h3 className="text-3xl text-[#A5C8D8] group-hover:text-[#10242F] duration-500  font-semibold mb-2">Website</h3>
+                        <p className=" text-[#A5C8D8] group-hover:text-[#10242F] duration-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem earum eius error placeat consequatur corrupti.</p>
+                        <div className='bg-[#A5C8D8] group-hover:bg-[#10242F] duration-500 p-3 rounded-lg mt-4'>
                             <div className='flex justify-between items-center'>
                                 <div className='flex gap-1'>
-                                    <div className='w-3 h-3 bg-[#10242F] group-hover:bg-[#A5C8D8] rounded-full'></div>
-                                    <div className='w-3 h-3 bg-[#10242F] group-hover:bg-[#A5C8D8] rounded-full'></div>
-                                    <div className='w-3 h-3 bg-[#10242F] group-hover:bg-[#A5C8D8] rounded-full'></div>
+                                    <div className='w-3 h-3 bg-[#10242F] group-hover:bg-[#A5C8D8] duration-500 rounded-full'></div>
+                                    <div className='w-3 h-3 bg-[#10242F] group-hover:bg-[#A5C8D8] duration-500 rounded-full'></div>
+                                    <div className='w-3 h-3 bg-[#10242F] group-hover:bg-[#A5C8D8] duration-500 rounded-full'></div>
                                 </div>
-                                <p className='text-[#10242F] group-hover:text-[#A5C8D8] text-sm font-medium'>Photography</p>
+                                <p className='text-[#10242F] group-hover:text-[#A5C8D8] duration-500 text-sm font-medium'>Photography</p>
                             </div>
-                            <div className='my-3 w-full h-44 bg-[#10242F] group-hover:bg-[#A5C8D8] rounded-md'>
+                            <div className='my-3 w-full h-44 bg-[#10242F] group-hover:bg-[#A5C8D8] duration-500 rounded-md'>
 
                             </div>
                         </div>
@@ -92,21 +91,23 @@ const Services = () => {
 
 
                     <div
-                        className={`relative w-80 md:w-72 lg:w-96 p-6 text-left rounded-lg shadow-lg transform transition-transform duration-300 ease-in-out hover:-translate-y-5 group bg-[#E39A4D]  cursor-pointer`}
+                        className={`relative overflow-hidden w-80 md:w-72 lg:w-96 p-6 text-left rounded-lg shadow-lg transform transition-transform duration-300 ease-in-out hover:-translate-y-5 group bg-[#E39A4D]  cursor-pointer`}
                     >
-                        <h3 className="text-3xl text-[#452623] group-hover:text-[#E39A4D] font-semibold mb-2">Website</h3>
-                        <p className=" text-[#452623] group-hover:text-[#E39A4D]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem earum eius error placeat consequatur corrupti.</p>
+                        <div className="absolute h-[0rem] w-[0rem] -z-10 rounded-full bg-[#452623] duration-500 -top-20  -left-20  group-hover:h-[550px] group-hover:w-[34rem] transition-all ease-in-out"></div>
 
-                        <div className='bg-[#452623] group-hover:bg-[#E39A4D] p-3 rounded-lg mt-4'>
+                        <h3 className="text-3xl text-[#452623] group-hover:text-[#E39A4D] duration-500 font-semibold mb-2">Website</h3>
+                        <p className=" text-[#452623] group-hover:text-[#E39A4D] duration-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem earum eius error placeat consequatur corrupti.</p>
+
+                        <div className='bg-[#452623] group-hover:bg-[#E39A4D] duration-500 p-3 rounded-lg mt-4'>
                             <div className='flex justify-between items-center'>
                                 <div className='flex gap-1'>
-                                    <div className='w-3 h-3 bg-[#E39A4D] group-hover:bg-[#452623] rounded-full'></div>
-                                    <div className='w-3 h-3 bg-[#E39A4D] group-hover:bg-[#452623] rounded-full'></div>
-                                    <div className='w-3 h-3 bg-[#E39A4D] group-hover:bg-[#452623] rounded-full'></div>
+                                    <div className='w-3 h-3 bg-[#E39A4D] group-hover:bg-[#452623] duration-500 rounded-full'></div>
+                                    <div className='w-3 h-3 bg-[#E39A4D] group-hover:bg-[#452623] duration-500 rounded-full'></div>
+                                    <div className='w-3 h-3 bg-[#E39A4D] group-hover:bg-[#452623] duration-500 rounded-full'></div>
                                 </div>
-                                <p className='text-[#E39A4D] group-hover:text-[#452623] text-sm font-medium'>Photography</p>
+                                <p className='text-[#E39A4D] group-hover:text-[#452623] duration-500 text-sm font-medium'>Photography</p>
                             </div>
-                            <div className='my-3 w-full h-44 bg-[#E39A4D] group-hover:bg-[#452623] rounded-md'>
+                            <div className='my-3 w-full h-44 bg-[#E39A4D] group-hover:bg-[#452623] duration-500 rounded-md'>
 
                             </div>
                         </div>
