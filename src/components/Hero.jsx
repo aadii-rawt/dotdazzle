@@ -48,7 +48,7 @@ const Hero = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: 'easeOut' }} className='flex items-start justify-between'>
             <img src="./hero-img1.jpg" alt="" className='w-[150px] md:w-[250px] rounded-3xl -rotate-12 shadow-2xl ' style={{ boxShadow: "-30px 20px 0px rgba(0,0,0,0.2" }} />
-            <div className='mr-5'>
+            <div className='sm:mr-5 -mr-12'>
               <GiStarShuriken size={80} className='text-purple-800 move' />
             </div>
           </motion.div>

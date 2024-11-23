@@ -63,7 +63,7 @@ const Services = () => {
 
     return (
 
-        <div className='section relative'>
+        <section className='section relative'>
             <div className='max-w-[1280px] mx-auto'>
                 <h1 className='text-4xl font-russo text-center mb-20 '>Our Services</h1>
                 <div className="relative overflow-hidden flex flex-col items-center md:flex-row justify-center p-6 ">
@@ -89,7 +89,7 @@ const Services = () => {
 
 
                     <div
-                        className={`relative overflow-hidden w-80 md:w-72 lg:w-96 p-6 text-left rounded-lg shadow-lg transform transition-transform duration-300 ease-in-out hover:-translate-y-5 group bg-[#E39A4D]  cursor-pointer`}
+                        className={`relative -top-4 overflow-hidden w-80 md:w-72 lg:w-96 p-6 text-left rounded-lg shadow-lg transform transition-transform duration-300 ease-in-out hover:-translate-y-5 group bg-[#E39A4D]  cursor-pointer`}
                     >
                         <div className="absolute h-[0rem] w-[0rem] -z-10 rounded-full bg-[#452623] duration-500 -top-20  -left-20  group-hover:h-[550px] group-hover:w-[34rem] transition-all ease-in-out"></div>
 
@@ -137,7 +137,7 @@ const Services = () => {
                 <img src="./app-icon.png" alt="phone icon" className='w-28 absolute left-40 top-28 ' />
                 <img src="./tablet-icon.png" alt="tablet icon" className='w-28 absolute right-20 bottom-40 ' />
             </div >
-        </div >
+        </section >
     )
 }
 

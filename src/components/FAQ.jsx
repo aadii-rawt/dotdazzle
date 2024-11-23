@@ -50,7 +50,7 @@ function FAQ() {
           ))}
         </div>
 
-          <img src="./question-mark-icon1.avif" alt="question mark icon" className="w-20 hidden md:block absolute bottom-20 left-20 -rotate-[30deg] z-10" />
+          <img src="./infoicon.png" alt="question mark icon" className="w-24 hidden md:block absolute bottom-20 left-20 -rotate-[10deg] z-10" />
           <img src="./question-mark-icon2.avif" alt="question mark icon" className="w-20 hidden md:block absolute top-20 right-24 z-10" />
           <img src="./question-mark-icon3.avif" alt="question mark icon" className="w-20 hidden md:block absolute bottom-32 right-32 rotate-6 z-10" />
       </div>
