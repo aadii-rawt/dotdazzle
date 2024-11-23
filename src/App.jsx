@@ -12,6 +12,7 @@ import SEO from './components/SEO';
 import AboutUs from './components/AboutUs';
 import GetQuoteModal from './components/QuoteForm';
 import HoverCard from './components/HoverCard';
+import SecondHeader from './components/SecondHeader';
 
 const App = () => {
 
@@ -60,6 +61,7 @@ const App = () => {
         <FAQ />
         <Footer />
       </div>
+      <SecondHeader />
       <div>
         <a href="https://wa.me/+919717336452" target='_blank'>
           <img src="./social.png" alt="whatsapp" className='w-12 md:w-16 fixed bottom-5 right-5' />

@@ -94,7 +94,7 @@ const Services = () => {
                         <div className="absolute h-[0rem] w-[0rem] -z-10 rounded-full bg-[#452623] duration-500 -top-20  -left-20  group-hover:h-[550px] group-hover:w-[34rem] transition-all ease-in-out"></div>
 
                         <h3 className="text-3xl text-[#452623] group-hover:text-[#E39A4D] duration-500 font-semibold mb-2">Website</h3>
-                        <p className=" text-[#452623] group-hover:text-[#E39A4D] duration-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem earum eius error placeat consequatur corrupti.</p>
+                        <p className=" text-[#452623] group-hover:text-[#E39A4D] duration-500">Build a clean, optimized, effective website with our team of web dev experts</p>
 
                         <div className='bg-[#452623] group-hover:bg-[#E39A4D] duration-500 p-3 rounded-lg mt-4'>
                             <div className='flex justify-between items-center'>
@@ -119,19 +119,19 @@ const Services = () => {
                         <h3 className="text-3xl text-[#1F1738] group-hover:text-[#CBB0EB] duration-500 font-semibold mb-2">Graphic Design</h3>
                         <p className=" text-[#1F1738] group-hover:text-[#CBB0EB] duration-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem earum eius error placeat consequatur corrupti.</p>
                         <div className='flex items-center justify-center mt-14 w-[500px] gap-3 overflow-hidden '>
-                            <div className='w-40 h-40 bg-[#1F1738] group-hover:bg-[#CBB0EB] duration-500 rounded-full flex items-center justify-center'>
+                            <div className='w-40 h-40 bg-[#1F1738] group-hover:bg-[#CBB0EB] duration-500 rounded-3xl flex items-center justify-center'>
                                <h1 className='text-center text-[#CBB0EB] group-hover:text-[#1F1738] text-5xl font-semibold font-serif'>Aa</h1> 
                             </div>
                             <div className='w-40 h-40 bg-[#1F1738] group-hover:bg-[#CBB0EB] duration-500 rounded-full flex items-center justify-center'>
                             <HiColorSwatch className='text-[#CBB0EB] group-hover:text-[#1F1738] text-5xl' />
                             </div>
-                            <div className='w-40 h-40 bg-[#1F1738] group-hover:bg-[#CBB0EB] duration-500 rounded-full'></div>
+                            <div className='w-40 h-40 bg-[#1F1738] group-hover:bg-[#CBB0EB] duration-500 rounded-[50px]'></div>
                         </div>
                        
                     </div>
 
                 </div>
-                <div className=" absolute bottom-[-100px] left-0 w-full h-[200px] bg-white rounded-t-[50%]"></div>
+                <div className=" absolute bottom-[-100px] left-0 w-full h-[250px] bg-white rounded-t-[50%]"></div>
 
                 <img src="./www-icon.png" alt="browser icon" className='w-28 absolute left-10 bottom-28 rotate-12' />
                 <img src="./app-icon.png" alt="phone icon" className='w-28 absolute left-40 top-28 ' />
