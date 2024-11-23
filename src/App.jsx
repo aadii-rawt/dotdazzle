@@ -49,7 +49,7 @@ const App = () => {
       <Header />
       <div className='space-y-10'>
         <Hero />
-        <ServiceEffect />
+        <ServiceEffect /> 
         <WhyUs />
         <Services />
         <AboutUs />

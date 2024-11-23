@@ -40,8 +40,8 @@ function Footer() {
             <ToastContainer />
             <div id='contact' className='flex flex-col gap-y-10 md:flex-row justify-between '>
                 <div className='mx-2'>
-                    <h1 className='font-russo text-3xl md:text-5xl'>Let's make <br /> something together</h1>
-                    <h1 className='font-josefin my-3 text-xl'>Write us if you have any questions</h1>
+                    <h1 className='font-russo text-center text-3xl md:text-5xl'>Let's make <br /> something together</h1>
+                    <h1 className='font-josefin my-3 mt-5 text-xl'>Write us if you have any questions</h1>
                     <div>
                         <div className='flex items-center gap-3'>
                             <p className='flex items-center gap-2'> <span><MdOutlinePhone className='text-purple-600' /></span>+91 9599518124, </p>
@@ -51,7 +51,7 @@ function Footer() {
                     </div>
                     <div>
                         <h1>
-                        <img src="./dotdazzle-logo.png" alt="dotdazzle logo" className='-ml-1.5 mb-8' />
+                        <img src="./dotdazzle-logo.png" alt="dotdazzle logo" className='-ml-1.5 mb-0' />
                         </h1>
                     </div>
                 </div>

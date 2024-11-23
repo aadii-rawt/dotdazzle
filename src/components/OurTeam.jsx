@@ -3,7 +3,7 @@ import React from 'react';
 function OurTeam() {
     return (
         <div className='max-w-[1280px] mx-auto section'>
-            <h1 className='text-4xl font-russo text-center mb-20'>Meet the Artists</h1>
+            <h1 className='sm:text-4xl text-3xl font-russo text-center mb-20'>Meet the Artists</h1>
             <div className='flex flex-wrap items-center md:gap-0 gap-4 justify-evenly'>
                 {
                     [

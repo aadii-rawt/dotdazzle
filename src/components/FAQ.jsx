@@ -35,7 +35,7 @@ function FAQ() {
   };
   return (
     <div className='max-w-[1280px] mx-auto section'>
-      <h1 className='text-4xl font-russo text-center mb-20'>FAQs</h1>
+      <h1 className='sm;text-4xl text-3xl font-russo text-center mb-20'>FAQs</h1>
       <div className="relative">
         <div className="w-full md:w-3/5 md:mx-auto shadow-lg p-4 md:p-8 rounded-2xl">
           {accordionData.map((item, index) => (
