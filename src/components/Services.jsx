@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { motion, useAnimation } from 'framer-motion'
+import { HiColorSwatch } from 'react-icons/hi';
 
 const services = [
     {
@@ -112,33 +113,29 @@ const Services = () => {
 
 
                     <div
-                        className={`relative group cursor-pointer overflow-hidden w-80 md:w-72 lg:w-96 p-6 text-left rounded-xl shadow-lg transform transition-transform duration-300 ease-in-out hover:-translate-y-2 -ml-16  bg-[#CBB0EB] rotate-[4deg] translate-y-4`}>
+                        className={`relative group cursor-pointer min-h-90 max-h-[400px] overflow-hidden w-80 md:w-72 lg:w-96 p-6 text-left rounded-xl shadow-lg transform transition-transform duration-300 ease-in-out hover:-translate-y-2 -ml-16  bg-[#CBB0EB] rotate-[4deg] translate-y-4`}>
                         <div className="absolute h-[0rem] w-[0rem] -z-10 rounded-full bg-[#1F1738] duration-500 -top-20  -left-20  group-hover:h-[550px] group-hover:w-[34rem] transition-all ease-in-out"></div>
 
                         <h3 className="text-3xl text-[#1F1738] group-hover:text-[#CBB0EB] duration-500 font-semibold mb-2">Graphic Design</h3>
                         <p className=" text-[#1F1738] group-hover:text-[#CBB0EB] duration-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem earum eius error placeat consequatur corrupti.</p>
-
-                        <div className='bg-[#1F1738] group-hover:bg-[#CBB0EB]  duration-500 p-3 rounded-lg mt-4'>
-                            <div className='flex justify-between items-center'>
-                                <div className='flex gap-1'>
-                                    <div className='w-3 h-3 bg-[#CBB0EB] group-hover:bg-[#1F1738] duration-500 rounded-full'></div>
-                                    <div className='w-3 h-3 bg-[#CBB0EB] group-hover:bg-[#1F1738] duration-500 rounded-full'></div>
-                                    <div className='w-3 h-3 bg-[#CBB0EB] group-hover:bg-[#1F1738] duration-500 rounded-full'></div>
-                                </div>
-                                <p className='text-[#CBB0EB] group-hover:text-[#1F1738] duration-500 text-sm font-medium'>Photography</p>
+                        <div className='flex items-center justify-center mt-5 w-[500px] gap-3 overflow-hidden '>
+                            <div className='w-40 h-40 bg-[#1F1738] group-hover:bg-[#CBB0EB] duration-500 rounded-full flex items-center justify-center'>
+                               <h1 className='text-center text-[#CBB0EB] group-hover:text-[#1F1738] text-5xl font-semibold font-serif'>Aa</h1> 
                             </div>
-                            <div className='my-3 w-full h-44 bg-[#CBB0EB] group-hover:bg-[#1F1738] duration-500 rounded-md'>
-
+                            <div className='w-40 h-40 bg-[#1F1738] group-hover:bg-[#CBB0EB] duration-500 rounded-full flex items-center justify-center'>
+                            <HiColorSwatch className='text-[#CBB0EB] group-hover:text-[#1F1738] text-5xl' />
                             </div>
+                            <div className='w-40 h-40 bg-[#1F1738] group-hover:bg-[#CBB0EB] duration-500 rounded-full'></div>
                         </div>
+                       
                     </div>
 
                 </div>
                 <div className=" absolute bottom-[-100px] left-0 w-full h-[200px] bg-white rounded-t-[50%]"></div>
 
                 <img src="./www-icon.png" alt="browser icon" className='w-28 absolute left-10 bottom-28 rotate-12' />
-                <img src="./app-icon.png" alt="browser icon" className='w-28 absolute left-40 top-28 ' />
-                <img src="./tablet-icon.png" alt="browser icon" className='w-28 absolute right-20 bottom-40 ' />
+                <img src="./app-icon.png" alt="phone icon" className='w-28 absolute left-40 top-28 ' />
+                <img src="./tablet-icon.png" alt="tablet icon" className='w-28 absolute right-20 bottom-40 ' />
             </div >
         </div >
     )
