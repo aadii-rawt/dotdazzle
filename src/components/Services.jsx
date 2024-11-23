@@ -112,7 +112,7 @@ const Services = () => {
 
 
                     <div
-                        className={`relative group overflow-hidden w-80 md:w-72 lg:w-96 p-6 text-left rounded-xl shadow-lg transform transition-transform duration-300 ease-in-out hover:-translate-y-2 -ml-16  bg-[#CBB0EB] rotate-[4deg] translate-y-4`}>
+                        className={`relative group cursor-pointer overflow-hidden w-80 md:w-72 lg:w-96 p-6 text-left rounded-xl shadow-lg transform transition-transform duration-300 ease-in-out hover:-translate-y-2 -ml-16  bg-[#CBB0EB] rotate-[4deg] translate-y-4`}>
                         <div className="absolute h-[0rem] w-[0rem] -z-10 rounded-full bg-[#1F1738] duration-500 -top-20  -left-20  group-hover:h-[550px] group-hover:w-[34rem] transition-all ease-in-out"></div>
 
                         <h3 className="text-3xl text-[#1F1738] group-hover:text-[#CBB0EB] duration-500 font-semibold mb-2">Graphic Design</h3>
@@ -135,6 +135,10 @@ const Services = () => {
 
                 </div>
                 <div className=" absolute bottom-[-100px] left-0 w-full h-[200px] bg-white rounded-t-[50%]"></div>
+
+                <img src="./www-icon.png" alt="browser icon" className='w-28 absolute left-10 bottom-28 rotate-12' />
+                <img src="./app-icon.png" alt="browser icon" className='w-28 absolute left-40 top-28 ' />
+                <img src="./tablet-icon.png" alt="browser icon" className='w-28 absolute right-20 bottom-40 ' />
             </div >
         </div >
     )
