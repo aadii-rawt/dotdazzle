@@ -93,9 +93,7 @@ const Services = () => {
 
                     <div
                         className={`relative w-80 md:w-72 lg:w-96 p-6 text-left rounded-lg shadow-lg transform transition-transform duration-300 ease-in-out hover:-translate-y-5 group bg-[#E39A4D]  cursor-pointer`}
-
                     >
-
                         <h3 className="text-3xl text-[#452623] group-hover:text-[#E39A4D] font-semibold mb-2">Website</h3>
                         <p className=" text-[#452623] group-hover:text-[#E39A4D]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem earum eius error placeat consequatur corrupti.</p>
 

@@ -10,7 +10,7 @@ function AboutUs() {
                 </div>
                 <div className='md:w-[50%]'>
                     <div>
-                        <h1 className='font-bold text-5xl md:text-6xl font-russo'>Create your <br className='hidden md:inline-block' /> own Startup</h1>
+                        <h1 className='font-bold text-5xl md:text-6xl font-josefin'>Start Crafting Your  <br className='hidden md:inline-block' /> Next Great Idea</h1>
                         <h1 className='font-josefin text-lg my-3'>We are 100% committed to taking your startup from zero <br className='hidden md:inline-block' /> to step hundred.</h1>
                     </div>
                     <div className="grid justify-items-center md:justify-items-start grid-cols-1 gap-y-4 md:grid-cols-2 mt-5">
