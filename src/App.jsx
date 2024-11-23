@@ -11,8 +11,6 @@ import Projects from './components/Projects';
 import SEO from './components/SEO';
 import AboutUs from './components/AboutUs';
 import GetQuoteModal from './components/QuoteForm';
-import HoverCard from './components/HoverCard';
-import SecondHeader from './components/SecondHeader';
 
 const App = () => {
 
@@ -61,7 +59,6 @@ const App = () => {
         <FAQ />
         <Footer />
       </div>
-      <SecondHeader />
       <div>
         <a href="https://wa.me/+919717336452" target='_blank'>
           <img src="./social.png" alt="whatsapp" className='w-12 md:w-16 fixed bottom-5 right-5' />
@@ -69,10 +66,13 @@ const App = () => {
       </div>
 
       {/*==================== custom cursor ===========================*/}
-      {/* <div
+     {
+      
+      <div
         ref={cursorRef}
-        className="w-6 h-6 rounded-full border-2  border-black  absolute pointer-events-none transition-transform duration-75 transform -translate-x-1/2 -translate-y-1/2 z-50"
-      ></div> */}
+        className="w-4 h-4 rounded-full bg-black fixed pointer-events-none transition-transform duration-75 transform -translate-x-1/2 -translate-y-1/2 z-50"
+      ></div>
+     }
     </div >
   )
 }
