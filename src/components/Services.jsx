@@ -113,12 +113,12 @@ const Services = () => {
 
 
                     <div
-                        className={`relative group cursor-pointer min-h-90 max-h-[400px] overflow-hidden w-80 md:w-72 lg:w-96 p-6 text-left rounded-xl shadow-lg transform transition-transform duration-300 ease-in-out hover:-translate-y-2 -ml-16  bg-[#CBB0EB] rotate-[4deg] translate-y-4`}>
-                        <div className="absolute h-[0rem] w-[0rem] -z-10 rounded-full bg-[#1F1738] duration-500 -top-20  -left-20  group-hover:h-[550px] group-hover:w-[34rem] transition-all ease-in-out"></div>
+                        className={`relative group cursor-pointer min-h-[430px] max-h-[430px] overflow-hidden w-80 md:w-72 lg:w-96 p-6 text-left rounded-xl shadow-lg transform transition-transform duration-300 ease-in-out hover:-translate-y-2 -ml-16  bg-[#CBB0EB] rotate-[4deg] translate-y-4`}>
+                        <div className="absolute h-[0rem] w-[0rem] -z-10 rounded-full bg-[#1F1738] duration-500 -top-20  -left-20  group-hover:h-[560px] group-hover:w-[35rem] transition-all ease-in-out"></div>
 
                         <h3 className="text-3xl text-[#1F1738] group-hover:text-[#CBB0EB] duration-500 font-semibold mb-2">Graphic Design</h3>
                         <p className=" text-[#1F1738] group-hover:text-[#CBB0EB] duration-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem earum eius error placeat consequatur corrupti.</p>
-                        <div className='flex items-center justify-center mt-5 w-[500px] gap-3 overflow-hidden '>
+                        <div className='flex items-center justify-center mt-14 w-[500px] gap-3 overflow-hidden '>
                             <div className='w-40 h-40 bg-[#1F1738] group-hover:bg-[#CBB0EB] duration-500 rounded-full flex items-center justify-center'>
                                <h1 className='text-center text-[#CBB0EB] group-hover:text-[#1F1738] text-5xl font-semibold font-serif'>Aa</h1> 
                             </div>
