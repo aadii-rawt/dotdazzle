@@ -66,13 +66,13 @@ const App = () => {
       </div>
 
       {/*==================== custom cursor ===========================*/}
-     {
+     {/* {
       
       <div
         ref={cursorRef}
         className="w-4 h-4 rounded-full bg-black fixed pointer-events-none transition-transform duration-75 transform -translate-x-1/2 -translate-y-1/2 z-50"
       ></div>
-     }
+     } */}
     </div >
   )
 }

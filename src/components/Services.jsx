@@ -86,7 +86,7 @@ const Services = () => {
                                 <span><CgSearchFound size={20} /></span>
                                 <h1>Keyword Research</h1>
                             </div>
-                            <div className='flex gap-3 items-center text-[#10242F] group-hover:text-[#A5C8D8] py-3 px-6 bg-[#A5C8D8] group-hover:bg-[#10242F] font-medium duration-500'>
+                            <div className='flex gap-3 items-center text-[#10242F] group-hover:text-[#A5C8D8] py-3 px-6  group-hover:bg-[#10242F] font-medium duration-500'>
                                 <span><CgComponents size={20} /></span>
                                 <h1>Technical SEO</h1>
                             </div>
