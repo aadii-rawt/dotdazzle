@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { toast, ToastContainer } from "react-toastify";
 
 const GetQuoteModal = () => {
     const [isOpen, setIsOpen] = useState(false); // Modal open state
@@ -7,12 +8,17 @@ const GetQuoteModal = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         // Handle form data submission here
-        alert("Form submitted!");
+        // alert("Form submitted!");
+
+        notify();
         setIsOpen(false); // Close the modal after submission
     };
 
+    const notify = () => toast("Thanks For Reaching Out!");
+
     return (
         <div className="!pt-12">
+            <ToastContainer/>
             {/* Button to open the modal */}
 
             <div className="text-center">
@@ -28,16 +34,16 @@ const GetQuoteModal = () => {
 
             {/* Modal */}
             {isOpen && (
-                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-30 z-50">
-                    <div className="bg-gradient-to-br from-purple-50/20 to-purple-200/40 min-w-[28rem] rounded-md shadow-purple-400 shadow-[5px_5px_0px_0px_rgba(147,_51,_234,_0.5)]">
+                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-25 z-50">
+                    <div className="bg-gradient-to-br from-purple-50/20 to-purple-200/40 sm:min-w-[28rem] min-w-[85%] rounded-md shadow-purple-400 shadow-[5px_5px_0px_0px_rgba(147,_51,_234,_0.5)]">
 
 
                         <div className="bg-white/40 rounded-lg shadow-lg w-full p-6 relative backdrop-blur-[21px] backdrop-saturate-[200%] border border-gray-300/30">
 
-                            <div>
-                                <img src="comma.png" alt=".comma" className="w-12 absolute -top-6 -left-5 z-20" />
-                                <img src="comma.png" alt=".comma" className="w-12 absolute -bottom-6 -right-5 z-20 rotate-180" />
-                            </div>
+                            {/* <div> */}
+                                <img src="comma.png" alt=".comma" className="w-12 absolute sm:-top-6 -top-4 -left-4 sm:-left-5 z-20" />
+                            <img src="comma.png" alt=".comma" className="w-12 absolute sm:-bottom-6 -bottom-4 sm:-right-5 -right-4 z-20 rotate-180" />
+                            {/* </div> */}
                             {/* Close Button */}
                             <button
                                 onClick={() => setIsOpen(false)}
@@ -59,10 +65,13 @@ const GetQuoteModal = () => {
                                 </svg>
                             </button>
 
+
                             {/* Title */}
-                            <h2 className="text-3xl font-arik font- text-gray-800 mb-4">
+                            <h2 className="sm:text-3xl text-2xl font-arik font- text-gray-800 mb-4">
                                 Get a Quote
                             </h2>
+
+                            <img src="/infoicon.png" alt=".info" className="w-16 absolute top-3 rotate-12 sm:left-56 left-44" />
 
                             {/* Form */}
                             <form onSubmit={handleSubmit} className="space-y-4">
@@ -77,7 +86,7 @@ const GetQuoteModal = () => {
                                     <input
                                         type="text"
                                         id="name"
-                                        className="mt-1 w-full px-4 py-2 border-b border-b-black focus:ring-0 focus:outline-none bg-transparent"
+                                        className="mt-1 w-full px-4 py-2 border-b border-b-black focus:ring-0 focus:outline-none bg-transparent placeholder:text-gray-700"
                                         placeholder="Your Name"
                                         required
                                     />
@@ -94,7 +103,7 @@ const GetQuoteModal = () => {
                                     <input
                                         type="text"
                                         id="contact"
-                                        className="mt-1 w-full px-4 py-2 border-b border-b-black focus:ring-0 focus:outline-none bg-transparent"
+                                        className="mt-1 w-full px-4 py-2 border-b border-b-black focus:ring-0 focus:outline-none bg-transparent placeholder:text-gray-700"
                                         placeholder="Your Email or Phone"
                                         required
                                     />
@@ -111,7 +120,7 @@ const GetQuoteModal = () => {
                                     <textarea
                                         id="message"
                                         rows="4"
-                                        className="mt-1 w-full px-4 py-2 border border-black rounded-sm focus:ring-0 focus:outline-none bg-transparent"
+                                        className="mt-1 h-16 w-full px-4 py-2 border border-black rounded focus:ring-0 focus:outline-none bg-transparent placeholder:text-gray-700"
                                         placeholder="Your Message"
                                         required
                                     ></textarea>
