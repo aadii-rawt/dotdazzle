@@ -27,7 +27,7 @@ const data = [
 ]
 function WhyUs() {
     return (
-        <section className='max-w-[1280px] mx-auto section'>
+        <section className='max-w-[1280px] mx-auto section' id="benefits">
             <h1 className='text-4xl font-russo text-center mb-20'>Why Choose Us</h1>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-5 justify-center items-center mx-auto relative'>
                 {data.map((t) => (
