@@ -23,9 +23,9 @@ const Header = () => {
                     </div>
                     <ul className='hidden md:flex gap-4 rounded-3xl bg-black text-white p-3 px-5 font-medium'>
                         <li><a href='#'>Home</a></li>
-                        <li><a href='#project'>Project</a></li>
+                        <li><a href='#benefits'>Benefits</a></li>
                         <li><a href='#about'>About us</a></li>
-                        <li><a href='#contact'>Contact</a></li>
+                        <li><a href='#project'>Project</a></li>
                     </ul>
                 </nav>
                 <div className='flex items-center gap-3'>

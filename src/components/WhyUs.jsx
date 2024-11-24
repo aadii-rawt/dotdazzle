@@ -11,17 +11,17 @@ const data = [
     {
         title: "Personal Connection",
         img: "./phone.avif",
-        content: "We provide websites to all startups at very affordable prices."
+        content: "We Build a Personal Connection with All Startup Owners."
     },
     {
         title: "Industry Standard",
         img: "./industry.jpg",
-        content: "We provide websites to all startups at very affordable prices."
+        content: "We ensure our work meets industry standards."
     },
     {
         title: "100% Trust",
         img: "./trust.avif",
-        content: "We provide websites to all startups at very affordable prices."
+        content: "We give 100% trust to our clients and their startups.a"
     },
    
 ]

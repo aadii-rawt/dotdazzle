@@ -7,7 +7,7 @@ import { GoArrowUpRight } from 'react-icons/go'
 
 const Hero = () => {
   return (
-    <section className="bg-gradient-to-b from-purple-100 via-purple-50  sm:pt-24 pt-[8rem] md:px-12 overflow-hidden">
+    <section className="bg-gradient-to-b from-purple-100 via-purple-50  sm:pt-24 pt-[8rem] md:px-12 ">
       <div className=' relative max-w-[1280px] mx-auto w-full h-full  md:min-h-screen  flex flex-col space-y-10 md:flex-row items-center justify-between'>
         <div className='relative bg-transparent  md:-mt-40 md:w-1/2'>
           <div className=''>
@@ -49,7 +49,8 @@ const Hero = () => {
             transition={{ duration: 0.8, ease: 'easeOut' }} className='flex items-start justify-between'>
             <img src="./hero-img1.jpg" alt="" className='w-[120px] sm:w-[150px] md:w-[250px] rounded-3xl -rotate-12 boxshadow' />
             <div className='sm:mr-5 -mr-12 sm:static absolute bottom-36 left-0'>
-              <GiStarShuriken size={80} className='text-purple-800 move' />
+              {/* <GiStarShuriken size={80} className='text-purple-800 move' /> */}
+              <img src="./hero-icon2.png" alt="hero icon" className='w-14 md:w-28 move' />
             </div>
           </motion.div>
           <motion.div
@@ -57,7 +58,9 @@ const Hero = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: 'easeOut' }} className='flex items-center justify-between sm:mr-10 '>
             <div>
-              <GiNinjaStar size={80} className='text-purple-800 move sm:static absolute right-0' />
+              {/* <GiNinjaStar size={80} className='text-purple-800 move sm:static absolute right-0' /> */}
+              <img src="./hero-icon1.png" alt="hero icon" className='w-16 md:w-32 move' />
+
             </div>
             <img src="./hero-img2.jpg" alt="" className=' w-[120px] sm:w-[150px] md:w-[250px] rounded-3xl rotate-12' />
           </motion.div>
