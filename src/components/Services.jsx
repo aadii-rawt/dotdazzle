@@ -133,9 +133,9 @@ const Services = () => {
                 </div>
                 <div className=" absolute bottom-[-100px] left-0 w-full h-[250px] bg-white rounded-t-[50%] sm:block hidden"></div>
 
-                <img src="./www-icon.png" alt="browser icon" className='w-28 absolute sm:left-10 right-4 sm:bottom-28 bottom-[35rem] rotate-12' />
+                <img src="./www-icon.png" alt="browser icon" className='w-28 absolute sm:left-[20rem] md:left-[32rem] right-4 sm:top-48 bottom-[35rem] rotate-12' />
                 <img src="./app-icon.png" alt="phone icon" className='w-28 absolute sm:left-40 right-5 sm:top-28 top-[13rem] ' />
-                <img src="./tablet-icon.png" alt="tablet icon" className='w-28 absolute sm:right-20 left-0 sm:bottom-40 bottom-[5rem] ' />
+                <img src="./tablet-icon.png" alt="tablet icon" className='w-28 absolute left- sm:right-24 sm:top-52 bottom-[5rem] ' />
             </div >
         </section >
     )

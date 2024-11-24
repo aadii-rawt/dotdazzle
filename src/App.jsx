@@ -61,7 +61,7 @@ const App = () => {
       </div>
       <div>
         <a href="https://wa.me/+919717336452" target='_blank'>
-          <img src="./social.png" alt="whatsapp" className='w-12 md:w-16 fixed bottom-5 right-5' />
+          <img src="./social.png" alt="whatsapp" className='w-10 sm:w-12 md:w-16 fixed bottom-5 right-5' />
         </a>
       </div>
 

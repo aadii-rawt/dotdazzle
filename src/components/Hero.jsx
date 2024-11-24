@@ -7,14 +7,14 @@ import { GoArrowUpRight } from 'react-icons/go'
 
 const Hero = () => {
   return (
-    <section className="bg-gradient-to-b from-purple-100 via-purple-50  pt-24 overflow-hidden">
+    <section className="bg-gradient-to-b from-purple-100 via-purple-50  sm:pt-24 pt-[8rem] md:px-12 overflow-hidden">
       <div className=' relative max-w-[1280px] mx-auto w-full h-full  md:min-h-screen  flex flex-col space-y-10 md:flex-row items-center justify-between'>
         <div className='relative bg-transparent  md:-mt-40 md:w-1/2'>
           <div className=''>
             <motion.h1
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, ease: 'easeOut' }} className='text-5xl md:text-8xl text-center md:text-left font-russo'>Your Idea <br /> Our Code <br /></motion.h1>
+              transition={{ duration: 0.8, ease: 'easeOut' }} className='text-5xl md:text-6xl lg:text-8xl text-center md:text-left font-russo'>Your Idea <br /> Our Code <br /></motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -24,7 +24,7 @@ const Hero = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: 'easeOut' }}  className='inline-block'>
 
-              <a target='_blank' href="https://wa.me/+919717336452" className='bg-gradient-to-r from-purple-900  via-purple-800 to-purple-700  font-russo  text-white md:text-2xl p-2 px-5 flex items-center gap-4 mt-5  md:mt-8 rounded-3xl'>
+              <a target='_blank' href="https://wa.me/+919717336452" className='bg-gradient-to-r from-purple-900  via-purple-800 to-purple-700  font-russo  text-white md:text-2xl p-2 px-5 flex items-center gap-4 sm:mt-5  md:mt-8 rounded-3xl'>
               <span>Let's talk</span> <GoArrowUpRight strokeWidth={1} className='text-2xl' />
               </a>
               </motion.div>
@@ -42,24 +42,24 @@ const Hero = () => {
             </motion.div>
           </div>
         </div>
-        <div className='flex flex-col items-center justify-center md:w-[40%]'>
+        <div className='flex pb-5 sm:flex-col sm:space-x-0 -space-x-3 items-center justify-center md:w-[40%]'>
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: 'easeOut' }} className='flex items-start justify-between'>
-            <img src="./hero-img1.jpg" alt="" className='w-[150px] md:w-[250px] rounded-3xl -rotate-12 shadow-2xl ' style={{ boxShadow: "-30px 20px 0px rgba(0,0,0,0.2" }} />
-            <div className='sm:mr-5 -mr-12'>
+            <img src="./hero-img1.jpg" alt="" className='w-[120px] sm:w-[150px] md:w-[250px] rounded-3xl -rotate-12 boxshadow' />
+            <div className='sm:mr-5 -mr-12 sm:static absolute bottom-36 left-0'>
               <GiStarShuriken size={80} className='text-purple-800 move' />
             </div>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: 'easeOut' }} className='flex items-center justify-between mr-10 '>
+            transition={{ duration: 0.8, ease: 'easeOut' }} className='flex items-center justify-between sm:mr-10 '>
             <div>
-              <GiNinjaStar size={80} className='text-purple-800 move' />
+              <GiNinjaStar size={80} className='text-purple-800 move sm:static absolute right-0' />
             </div>
-            <img src="./hero-img2.jpg" alt="" className=' w-[150px] md:w-[250px] rounded-3xl rotate-12' />
+            <img src="./hero-img2.jpg" alt="" className=' w-[120px] sm:w-[150px] md:w-[250px] rounded-3xl rotate-12' />
           </motion.div>
 
         </div>

@@ -88,3 +88,13 @@ html {
 .card-container {
   /* padding: 4rem; */
 }
+
+.boxshadow {
+  box-shadow: -30px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 640px) {
+  .boxshadow {
+    box-shadow: -12px 10px 0 rgba(17, 78, 168, 0.353);
+  }
+}
