@@ -50,7 +50,7 @@ const Hero = () => {
             <img src="./hero-img1.jpg" alt="" className='w-[150px] md:w-[250px] rounded-3xl -rotate-12 shadow-2xl ' style={{ boxShadow: "-30px 20px 0px rgba(0,0,0,0.2" }} />
             <div className='sm:mr-5 -mr-12'>
               {/* <GiStarShuriken size={80} className='text-purple-800 move' /> */}
-              <img src="./hero-icon2.png" alt="hero icon" className='w-28 move' />
+              <img src="./hero-icon2.png" alt="hero icon" className='w-14 md:w-28 move' />
             </div>
           </motion.div>
           <motion.div
@@ -59,7 +59,7 @@ const Hero = () => {
             transition={{ duration: 0.8, ease: 'easeOut' }} className='flex items-center justify-between mr-10 '>
             <div>
               {/* <GiNinjaStar size={80} className='text-purple-800 move' /> */}
-              <img src="./hero-icon1.png" alt="hero icon" className='w-32 move' />
+              <img src="./hero-icon1.png" alt="hero icon" className='w-16 md:w-32 move' />
 
             </div>
             <img src="./hero-img2.jpg" alt="" className=' w-[150px] md:w-[250px] rounded-3xl rotate-12' />
