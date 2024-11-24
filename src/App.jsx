@@ -55,7 +55,7 @@ const App = () => {
         <AboutUs />
         <GetQuoteModal/>
         <Projects />
-        <OurTeam />
+        {/* <OurTeam /> */}
         <FAQ />
         <Footer />
       </div>
