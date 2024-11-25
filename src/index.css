@@ -70,7 +70,7 @@ html {
   justify-content: center;
   position: sticky;
   overflow: hidden;
-  top: 10rem;
+  top: 6rem;
 
 }
 
@@ -96,5 +96,8 @@ html {
 @media (max-width: 640px) {
   .boxshadow {
     box-shadow: -12px 10px 0 rgba(17, 78, 168, 0.353);
+  }
+  .section {
+    padding: 20px 0px 20px 0;
   }
 }

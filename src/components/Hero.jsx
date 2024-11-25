@@ -7,7 +7,7 @@ import { GoArrowUpRight } from 'react-icons/go'
 
 const Hero = () => {
   return (
-    <section className="bg-gradient-to-b from-purple-100 via-purple-50  sm:pt-24 pt-[8rem] md:px-12 overflow-hidden">
+    <section className="bg-gradient-to-b from-purple-100 via-purple-50  sm:pt-24 pt-[8rem] md:px-12 sm:mb-0 mb-20 overflow-hidden">
       <div className=' relative max-w-[1280px] mx-auto w-full h-full  md:min-h-screen  flex flex-col space-y-10 md:flex-row items-center justify-between'>
         <div className='relative bg-transparent  md:-mt-40 md:w-1/2'>
           <div className=''>
