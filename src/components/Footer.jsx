@@ -38,7 +38,7 @@ function Footer() {
     return (
         <footer className='max-w-[1280px] mx-auto pt-20 px-2'>
             <ToastContainer />
-            <div id='contact' className='flex flex-col gap-y-10 md:flex-row justify-between '>
+            <div className='flex flex-col gap-y-10 md:flex-row justify-between '>
                 <div className='mx-2'>
                     <h1 className='font-russo sm:text-start text-center text-3xl md:text-5xl'>Let's make <br /> something together</h1>
                     <h1 className='font-josefin my-3 mt-5 text-xl'>Write us if you have any questions</h1>
