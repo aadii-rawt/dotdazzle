@@ -28,7 +28,7 @@ const data = [
 function WhyUs() {
     return (
         <section className='max-w-[1280px] mx-auto section'>
-            <h1 className='sm:text-4xl text-3xl font-russo text-center mb-20'>Why Choose Us</h1>
+            <h1 className='sm:text-4xl text-3xl font-russo text-center sm:mb-20 mb-8'>Why Choose Us</h1>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-5 justify-center items-center mx-auto relative'>
                 {data.map((t) => (
                     <motion.div initial={{ opacity: 0, y: 50 }}

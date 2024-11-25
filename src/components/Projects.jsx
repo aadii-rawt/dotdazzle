@@ -11,14 +11,14 @@ function Projects() {
 
     return (
         <section id='project' title='project-section' className='max-w-[1280px] mx-auto section'>
-            <h1 className='sm:text-4xl text-3xl font-russo text-center mb-20'>Our Projects</h1>
+            <h1 className='sm:text-4xl text-3xl font-russo text-center sm:mb-20 mb-8'>Our Projects</h1>
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 px-3 md:px-0'>
                 {projects.map((data, index) => (
                     <motion.div key={data}
                         initial="hidden"
                         whileInView="visible"
                         variants={cardVariants}
-                        transition={{ duration: 0.8, delay: index * 0.2, ease: 'easeInOut' }}
+                        transition={{ duration: 0.8, delay: 0.2, ease: 'easeInOut' }}
                         viewport={{ once: false, amount: 0.2 }}
                         className='rounded-2xl overflow-hidden shadow-md  hover:scale-110'>
                         <img src={data} alt="" />
