@@ -68,11 +68,11 @@ function ServiceEffect() {
                 {/* <img src="https://media.istockphoto.com/id/1654916078/photo/abstract-rough-colorful-multicolored-art-on-canvas.jpg?s=612x612&w=0&k=20&c=FkDhu7HQlX4q84mJHCxpagHHSi58CFpQWUl2tfrteV0=" alt="" /> */}
                 {/* <img src="./project1.avif" alt="" /> */}
             </div>
-            <div className="card rounded-2xl overflow-hidden max-w-[97%] bg-cover bg-right " style={{backgroundImage: "url('./a.png')"}}>
+            {/* <div className="card rounded-2xl overflow-hidden max-w-[97%] bg-cover bg-right " style={{backgroundImage: "url('./a.png')"}}>
                 <h2 className='sm:text-5xl text-3xl z-40 absolute -0 font-bold font-josefin text-white'>#SiteRedesign</h2>
                 {/* <h2 className='text-3xl z-40 absolute -bottom-3 font-bold font-russo italic text-white'>#002</h2> */}
-                {/* <img src="/a.png" className='mt-2' alt="" /> */}
-            </div>
+                {/* <img src="/a.png" className='mt-2' alt="" /> 
+            </div> */}
             <div className="card rounded-2xl overflow-hidden max-w-[95%]">
                 <h2 className='sm:text-5xl text-3xl z-40 absolute -0 font-bold font-josefin text-white'>#WebDesign</h2>
                 <h2 className='text-3xl z-40 absolute -bottom-3 font-bold font-russo italic text-white'>#003</h2>
