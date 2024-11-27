@@ -7,6 +7,7 @@ import { FaLink } from 'react-icons/fa';
 import { DiIllustrator, DiPhotoshop } from 'react-icons/di';
 import { IoBulbOutline, IoPhonePortraitOutline, IoTabletPortraitSharp } from 'react-icons/io5';
 import { FiMonitor } from 'react-icons/fi';
+import { SiAdobeillustrator, SiAdobephotoshop } from 'react-icons/si';
 
 const services = [
     {
@@ -127,11 +128,6 @@ const Services = () => {
                                 <p className='text-[#E39A4D] group-hover:text-[#452623] duration-500 text-sm font-medium'>Website</p>
                             </div>
                             <div className='my-3 w-full h-44 bg-[#E39A4D] group-hover:bg-[#452623] duration-500 rounded-md relative'>
-                                <div className='flex justify-center items-center h-full'>
-                                    <IoPhonePortraitOutline className='text-4xl absolute top-[52px] right-24' />
-                                    <IoTabletPortraitSharp className='text-4xl absolute top-[52px] left-24' />
-                                    <CiMonitor className='text-6xl absolute top-8' />
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -149,9 +145,8 @@ const Services = () => {
                                     Aa
                                 </h1>
 
-                                <DiPhotoshop className='absolute top-3 left-3 text-4xl rotate-6 text-[#CBB0EB] group-hover:text-[#1F1738]' />
-                                <DiIllustrator className='absolute bottom-3 right-3 text-4xl -rotate-6 text-[#CBB0EB] group-hover:text-[#1F1738]' />
-                                <IoBulbOutline className='absolute top-7 right-4 text-4xl -rotate-[18deg] text-[#CBB0EB] group-hover:text-[#1F1738]' />
+                                <SiAdobephotoshop size={24} className='absolute top-3 left-3 text-4xl rotate-6 text-[#CBB0EB] group-hover:text-[#1F1738]' />
+                                <SiAdobeillustrator size={23} className='absolute bottom-3 right-3 text-4xl -rotate-6 text-[#CBB0EB] group-hover:text-[#1F1738]' />
                             </div>
                             <div className='w-40 h-40 bg-[#1F1738] group-hover:bg-[#CBB0EB] duration-500 rounded-full flex items-center justify-center'>
                                 <HiColorSwatch className='text-[#CBB0EB] group-hover:text-[#1F1738] text-5xl' />

@@ -10,7 +10,7 @@ function Projects() {
     };
 
     return (
-        <section id='project' title='project-section' className='max-w-[1280px] mx-auto section'>
+        <section id='project' className='max-w-[1280px] mx-auto section'>
             <h1 className='sm:text-4xl text-3xl font-russo text-center sm:mb-20 mb-8'>Our Projects</h1>
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 px-3 md:px-0'>
                 {projects.map((data, index) => (
