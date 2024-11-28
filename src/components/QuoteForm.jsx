@@ -3,22 +3,40 @@ import { toast, ToastContainer } from "react-toastify";
 
 const GetQuoteModal = () => {
     const [isOpen, setIsOpen] = useState(false); // Modal open state
+    const [result, setResult] = useState('');
 
     // Function to handle form submission
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // Handle form data submission here
-        // alert("Form submitted!");
+        setResult("Sending....");
+        const formData = new FormData(e.target);
 
-        notify();
-        setIsOpen(false); // Close the modal after submission
-    };
+        formData.append("access_key", "3201b543-5c29-4336-8cef-6972717e06c3");
+
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+            setResult("Form Submitted Successfully");
+            // notify()
+
+            e.target.reset();
+        } else {
+            console.log("Error", data);
+            setResult(data.message);
+        }
+        setIsOpen(false);
+    }
 
     const notify = () => toast("Thanks For Reaching Out!");
 
     return (
         <div className="!pt-12">
-            <ToastContainer/>
+            {/* <ToastContainer/> */}
             {/* Button to open the modal */}
 
             <div className="text-center">
@@ -88,6 +106,7 @@ const GetQuoteModal = () => {
                                         id="name"
                                         className="mt-1 w-full px-4 py-2 border-b border-b-black focus:ring-0 focus:outline-none bg-transparent placeholder:text-gray-700"
                                         placeholder="Your Name"
+                                        name="name"
                                         required
                                     />
                                 </div>
@@ -105,6 +124,7 @@ const GetQuoteModal = () => {
                                         id="contact"
                                         className="mt-1 w-full px-4 py-2 border-b border-b-black focus:ring-0 focus:outline-none bg-transparent placeholder:text-gray-700"
                                         placeholder="Your Email or Phone"
+                                        name="contact"
                                         required
                                     />
                                 </div>
@@ -122,6 +142,7 @@ const GetQuoteModal = () => {
                                         rows="4"
                                         className="mt-1 h-16 w-full px-4 py-2 border border-black rounded focus:ring-0 focus:outline-none bg-transparent placeholder:text-gray-700"
                                         placeholder="Your Message"
+                                        name="message"
                                         required
                                     ></textarea>
                                 </div>
