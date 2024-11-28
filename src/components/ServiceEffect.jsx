@@ -58,7 +58,7 @@ function ServiceEffect() {
     return (
         <motion.div initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: 'easeOut' }} className='card-container flex flex-col items-center max-w-[1280px] mx-auto section '>
+            transition={{ duration: 0.8, ease: 'easeOut' }} className='card-container hidden md:flex flex-col items-center max-w-[1280px] mx-auto section '>
 
             {/* <h4 className='sticky top-24 mb-6 text-center text-4xl font-russo font-bold'>Our Services</h4> */}
 
