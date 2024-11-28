@@ -62,16 +62,13 @@ function ServiceEffect() {
 
             {/* <h4 className='sticky top-24 mb-6 text-center text-4xl font-russo font-bold'>Our Services</h4> */}
 
-            <div className="card bg-center w-full bg-cover rounded-2xl" style={{ backgroundImage: "url('https://trembelingart.com/wp-content/uploads/2018/07/Warm-and-Cool-F-1.jpg')" }}>
-                <h2 className='sm:text-5xl text-3xl z-40 absolute -0 font-bold font-josefin text-white'>#WebDevelopment</h2>
-                <h2 className='text-3xl z-40 absolute -bottom-3 font-bold font-russo italic text-white'>#001</h2>
-                {/* <img src="https://media.istockphoto.com/id/1654916078/photo/abstract-rough-colorful-multicolored-art-on-canvas.jpg?s=612x612&w=0&k=20&c=FkDhu7HQlX4q84mJHCxpagHHSi58CFpQWUl2tfrteV0=" alt="" /> */}
-                {/* <img src="./project1.avif" alt="" /> */}
+            <div className="card bg-center w-full bg-cover rounded-2xl" >
+               <img src="https://res.cloudinary.com/dpfw2cilw/image/upload/v1732708255/Black_and_Pink_3D_Coming_Soon_Instagram_Post_ybh1a6.png" alt="" />
             </div>
-            <div className="card rounded-2xl overflow-hidden max-w-[97%] bg-cover bg-right " style={{backgroundImage: "url('./a.png')"}}>
-                <h2 className='sm:text-5xl text-3xl z-40 absolute -0 font-bold font-josefin text-white'>#SiteRedesign</h2>
+            <div className="card rounded-2xl overflow-hidden max-w-[97%] bg-cover bg-right ">
+                {/* <h2 className='sm:text-5xl text-3xl z-40 absolute -0 font-bold font-josefin text-white'>#SiteRedesign</h2> */}
                 {/* <h2 className='text-3xl z-40 absolute -bottom-3 font-bold font-russo italic text-white'>#002</h2> */}
-                {/* <img src="/a.png" className='mt-2' alt="" /> */}
+                <img src="/a.png" className='mt-2' alt="" />
             </div>
             <div className="card rounded-2xl overflow-hidden max-w-[95%]">
                 <h2 className='sm:text-5xl text-3xl z-40 absolute -0 font-bold font-josefin text-white'>#WebDesign</h2>
