@@ -33,6 +33,12 @@ const Header = () => {
                     Contact us</a>
                     <div className='md:hidden'>
                         <BsGridFill size={24} />
+                        <div>
+                            <div>
+                            <img src="./dotdazzle-logo.png" alt='dotdazzle logo' title='logo of dotdazzle' className='w-24 md:w-28' />
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
