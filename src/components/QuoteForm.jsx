@@ -60,11 +60,11 @@ const GetQuoteModal = () => {
                         <motion.div
                             initial={{ opacity: 0, y: -50 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.8, ease: 'easeOut' }}
+                            transition={{ duration: 0.5, ease: 'easeOut' }}
                             className="bg-white/40 rounded-lg shadow-lg w-full p-6 relative backdrop-blur-[21px] backdrop-saturate-[200%] border border-gray-300/30">
 
                             {/* <div> */}
-                                <img src="comma.png" alt=".comma" className="w-12 absolute sm:-top-6 -top-4 -left-4 sm:-left-5 z-20" />
+                            <img src="comma.png" alt=".comma" className="w-12 absolute sm:-top-6 -top-4 -left-4 sm:-left-5 z-20" />
                             <img src="comma.png" alt=".comma" className="w-12 absolute sm:-bottom-6 -bottom-4 sm:-right-5 -right-4 z-20 rotate-180" />
                             {/* </div> */}
                             {/* Close Button */}
