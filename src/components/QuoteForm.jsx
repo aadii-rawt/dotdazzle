@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
+import { motion } from 'framer-motion'
 
 const GetQuoteModal = () => {
     const [isOpen, setIsOpen] = useState(false); // Modal open state
@@ -56,10 +57,14 @@ const GetQuoteModal = () => {
                     <div className="bg-gradient-to-br from-purple-50/20 to-purple-200/40 sm:min-w-[28rem] min-w-[85%] rounded-md shadow-purple-400 shadow-[5px_5px_0px_0px_rgba(147,_51,_234,_0.5)]">
 
 
-                        <div className="bg-white/40 rounded-lg shadow-lg w-full p-6 relative backdrop-blur-[21px] backdrop-saturate-[200%] border border-gray-300/30">
+                        <motion.div
+                            initial={{ opacity: 0, y: -50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, ease: 'easeOut' }}
+                            className="bg-white/40 rounded-lg shadow-lg w-full p-6 relative backdrop-blur-[21px] backdrop-saturate-[200%] border border-gray-300/30">
 
                             {/* <div> */}
-                                <img src="comma.png" alt=".comma" className="w-12 absolute sm:-top-6 -top-4 -left-4 sm:-left-5 z-20" />
+                            <img src="comma.png" alt=".comma" className="w-12 absolute sm:-top-6 -top-4 -left-4 sm:-left-5 z-20" />
                             <img src="comma.png" alt=".comma" className="w-12 absolute sm:-bottom-6 -bottom-4 sm:-right-5 -right-4 z-20 rotate-180" />
                             {/* </div> */}
                             {/* Close Button */}
@@ -159,7 +164,7 @@ const GetQuoteModal = () => {
                                     </button>
                                 </div>
                             </form>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             )}
