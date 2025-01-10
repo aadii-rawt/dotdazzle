@@ -74,10 +74,7 @@ const Services = () => {
             <div className='max-w-[1280px] mx-auto overflow-hidden'>
                 <h1 className='sm:text-4xl text-3xl font-russo text-center sm:mb-20 mb-8 relative z-30 '>Our Services</h1>
                 <div className="relative overflow-hidden flex flex-col items-center md:flex-row justify-center p-6 pb-0">
-                    {/* <div
-                        className={`relative overflow-hidden w-80 md:w-72 lg:w-96  text-left rounded-xl shadow-lg transform transition-transform duration-300 ease-in-out hover:-translate-y-2 -mr-16 group  bg-[#A5C8D8]  -rotate-[4deg] translate-y-4 cursor-pointer`} >
-                        <div className="absolute h-[0rem] w-[0rem] -z-10 rounded-full bg-[#10242F]duration-500 -top-20  -left-20  group-hover:h-[600px] group-hover:w-[34rem] transition-all ease-in-out"></div> */}
-                    <div
+                   <div
                         className={`relative overflow-hidden w-80 md:w-72 lg:w-96  text-left rounded-xl shadow-lg transform transition-transform duration-300 ease-in-out hover:-translate-y-2 -mr-16 group  bg-[#A5C8D8]  -rotate-[4deg] translate-y-4 cursor-pointer`}
                     >
                         <div className="absolute h-[0rem] w-[0rem] -z-10 rounded-full bg-[#10242F] duration-500 -top-20  -left-20  group-hover:h-[600px] group-hover:w-[34rem] transition-all ease-in-out"></div>
