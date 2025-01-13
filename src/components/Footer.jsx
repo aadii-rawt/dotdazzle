@@ -77,7 +77,7 @@ function Footer() {
             </div>
 
             <div className='border-t-2 border-gray-200 font-josefin flex  flex-col md:flex-row justify-between items-center py-5 mt-20'>
-                <p>© 2024 dotdazzle. All rights reserved.</p>
+                <p>© 2025 dotdazzle. All rights reserved.</p>
                 <div >
                     <ul className='flex gap-3'>
                         <a href='https://dotdazzle.in'  title='privacy and policy'>Privacy Policy</a >
