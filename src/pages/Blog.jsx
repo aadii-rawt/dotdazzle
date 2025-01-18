@@ -1,10 +1,25 @@
 import React, { useState } from 'react';
 import { FaRegCalendarAlt, FaRegComments } from 'react-icons/fa';
+import SEO from '../components/SEO';
 
 function Blog() {
     const [currentBlog, setCurrentBlog] = useState("bulk");
+    const blogMetaData = {
+        title: "Dotdazzle Blog - Insights on Web Development, SEO & Design",
+        description:
+            "Explore the Dotdazzle blog for the latest trends and insights on web development, SEO, graphic design, branding, and more. Stay ahead in the digital world with us!",
+        keywords:
+            "DotDazzle blog, web development insights, SEO tips, graphic design trends, branding strategies, digital marketing, IT solutions",
+        robots: "index, follow",
+        canonical: "https://dotdazzle.in/blog",
+        icons: [
+            { href: "/favicon.ico", type: "image/x-icon" },
+            { href: "/Favicon/favicon.png", sizes: "32x32", type: "image/png" },
+        ],
+    };
     return (
         <div>
+            <SEO metadata={blogMetaData}/>
             <div className="w-full container mx-auto mt-24 px-4">
                 <h1 className="text-center text-4xl font-bold">Blog</h1>
                 <div className="flex flex-wrap mt-10 w-full justify-center">
