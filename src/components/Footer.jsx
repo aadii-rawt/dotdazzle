@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { FaInstagram, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa6';
 import { MdOutlineEmail, MdOutlinePhone } from 'react-icons/md';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -47,12 +48,16 @@ function Footer() {
                             <p className='flex items-center gap-2'> <span><MdOutlinePhone className='text-purple-600' /></span>+91 9599518124, </p>
                             <p className='flex items-center gap-2'>  <span><MdOutlinePhone className='text-purple-600' /></span>+91 9717336452</p>
                         </div>
-                        <p title='mail to dotdazzle' className='flex items-center gap-2'> <MdOutlineEmail className='text-purple-600' /> <a href="mailto:dotdazzle@gmail.com" title='dotdazzle email'>dotdazzle.in@gmail.com</a></p>
+                        {/* <p title='mail to dotdazzle' className='flex items-center gap-2'> <MdOutlineEmail className='text-purple-600' /> <a href="mailto:dotdazzle@gmail.com" title='dotdazzle email'>dotdazzle.in@gmail.com</a></p> */}
                     </div>
                     <div>
-                        <h1>
-                        <img src="./dotdazzle-logo.png" alt="dotdazzle logo" className='-ml-1.5 mb-0' />
-                        </h1>
+                        <img src="./dotdazzle-logo.svg" alt="dotdazzle logo" className='-ml-1.5 mb-0 w-40 my-5' />
+
+                    </div>
+                    <div className='flex gap-5 text-2xl my-3 text-purple-600'>
+                        <a href="https://www.instagram.com/dotdazzle.in/" target='_blank' title='instagram'><FaInstagram /></a>
+                        <a  href="https://wa.me/+919599518124" target='_blank' title='whatsapp'><FaWhatsapp /></a>
+                        <a href="#" title='linkedin'><FaLinkedinIn /></a>
                     </div>
                 </div>
                 <div className='w-full md:w-1/3 mx-2'>

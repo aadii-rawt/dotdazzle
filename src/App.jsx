@@ -1,80 +1,39 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React from 'react';
 import Hero from './components/Hero';
 import Header from './components/Header';
 import Services from './components/Services';
 import WhyUs from './components/WhyUs';
 import Footer from './components/Footer';
 import FAQ from './components/FAQ';
-import OurTeam from './components/OurTeam';
 import ServiceEffect from './components/ServiceEffect';
 import Projects from './components/Projects';
 import SEO from './components/SEO';
 import AboutUs from './components/AboutUs';
 import GetQuoteModal from './components/QuoteForm';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Layout from './layout/Layout';
+import Home from './pages/Home';
+import Blog from './pages/Blog';
+
+const router = createBrowserRouter([
+  {
+    path: "",
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <Home />
+      },
+      {
+        path: "/blog",
+        element: <Blog />
+      },
+    ]
+  }
+])
 
 const App = () => {
-
-  const [isCursorVisible, setIsCursorVisible] = useState(false);
-  const [isQuote, setIsQuote] = useState(false);
-  const cursorRef = useRef(null);
-
-  useEffect(() => {
-    const handleMouseMove = (e) => {
-      if (cursorRef.current) {
-        cursorRef.current.style.top = `${e.clientY}px`;
-        cursorRef.current.style.left = `${e.clientX}px`;
-      }
-    };
-
-    // Show cursor on mouse move and add the event listener
-    const handleMouseEnter = () => setIsCursorVisible(true);
-    const handleMouseLeave = () => setIsCursorVisible(false);
-
-    window.addEventListener('mousemove', handleMouseMove);
-    window.addEventListener('mouseenter', handleMouseEnter);
-    window.addEventListener('mouseleave', handleMouseLeave);
-
-    return () => {
-      // Cleanup event listeners on unmount
-      window.removeEventListener('mousemove', handleMouseMove);
-      window.removeEventListener('mouseenter', handleMouseEnter);
-      window.removeEventListener('mouseleave', handleMouseLeave);
-    };
-  }, []);
-
-  return (
-    
-    <div className='relative '>
-      <SEO />
-      <Header />
-      <div className='space-y-10'>
-        <Hero />
-        <ServiceEffect /> 
-        <WhyUs />
-        <Services />
-        <AboutUs />
-        <GetQuoteModal/>
-        <Projects />
-        {/* <OurTeam /> */}
-        <FAQ />
-        <Footer />
-      </div>
-      <div>
-        <a href="https://wa.me/+919717336452" target='_blank'>
-          <img src="./social.png" alt="whatsapp" className='w-10 sm:w-12 md:w-16 fixed bottom-5 right-5' />
-        </a>
-      </div>
-
-      {/*==================== custom cursor ===========================*/}
-     {/* {
-      
-      <div
-        ref={cursorRef}
-        className="w-4 h-4 rounded-full bg-black fixed pointer-events-none transition-transform duration-75 transform -translate-x-1/2 -translate-y-1/2 z-50"
-      ></div>
-     } */}
-    </div >
-  )
+  return <RouterProvider router={router} />
 }
 
 export default App
