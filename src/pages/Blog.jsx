@@ -22,11 +22,11 @@ function Blog() {
             <SEO metadata={blogMetaData}/>
             <div className="w-full container mx-auto mt-24 px-4">
                 <h1 className="text-center text-4xl font-bold">Blog</h1>
-                <div className="flex flex-wrap mt-10 w-full justify-center">
-                    <div className="w-full lg:w-[65%] space-y-5">
+                <div className="flex flex-wrap mt-10 gap-6 w-full justify-center">
+                    <div className="w-full lg:w-[60%] space-y-5">
                         {currentBlog === "bulk" ? (
                             <div>
-                                <img src="https://futuredesks.in/wp-content/uploads/2022/12/blog_post03-1.png" alt="" className="rounded-xl w-full h-auto" />
+                                <img src="blogimg.png" alt="" className="rounded-xl w-full h-auto" />
                                 <div className="mt-4">
                                     <div className="flex flex-wrap gap-5">
                                         <h1 className="text-sm font-semibold text-gray-600 flex gap-2 items-center uppercase">
@@ -116,7 +116,7 @@ function Blog() {
                         <h1 className="font-bold text-xl">Recent Post</h1>
                         <div className="mt-5 gap-5 space-y-3">
                             <div className="flex gap-2 cursor-pointer" onClick={() => setCurrentBlog("bulk")}>
-                                <img src="https://futuredesks.in/wp-content/uploads/2022/12/blog_post03-1.png" alt="" className="w-28 rounded-md h-auto" />
+                                <img src="blogimg.png" alt="" className="w-28 h-24 rounded-md" />
                                 <div>
                                     <h1 className="text-sm font-semibold text-gray-600 flex gap-2 items-center">
                                         <FaRegCalendarAlt className="text-blue-700" /> November 13, 2024
