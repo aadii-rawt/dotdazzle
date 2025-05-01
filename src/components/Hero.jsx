@@ -62,7 +62,7 @@ const Hero = () => {
               <img src="./hero-icon1.png" alt="hero icon" className='w-16 md:w-32 move sm:static absolute right-0 bottom-5' />
 
             </div>
-            <img src="./hero-img2.jpg" alt="" className=' w-[120px] sm:w-[150px] md:w-[250px] rounded-3xl rotate-12' />
+            <img src="./hero-img2.jpg" alt="" className='relative bottom-10 w-[120px] sm:w-[150px] md:w-[250px] rounded-3xl rotate-[10deg]' />
           </motion.div>
 
         </div>
